@@ -1,0 +1,17 @@
+<?php
+
+
+class Nutzen_wie_erfolgt extends Question
+{
+    public function calculate($value, &$factors)
+    {
+        switch ($value) {
+            case "Kurzfristig und temporär":
+                $factors["Bedürfnishäufigkeit"] = 8;
+                break;
+            case "Dauerhaft":
+                $factors["Bedürfnishäufigkeit"] = 2;
+                break;
+        }
+    }
+}

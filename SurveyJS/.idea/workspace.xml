@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b631e4f5-3be1-43e6-b5db-8682bf69350e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1nWe68QAN8iWw4C19qeGFG7LW7c" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Desktop/Holocron" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\BKU\AntonBechtloff\Downloads\SurveyJS\src\Questions\Kundensituation" />
+      <recent name="D:\Users\BKU\AntonBechtloff\Downloads\SurveyJS\src\Questions\Kunden" />
+      <recent name="D:\Users\BKU\AntonBechtloff\Downloads\SurveyJS\public" />
+      <recent name="C:\xampp\htdocs\SurveyJS\public" />
+      <recent name="C:\xampp\htdocs\SurveyJS\scripts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\SurveyJS" />
+      <recent name="C:\xampp\htdocs\SurveyJS\lib" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b631e4f5-3be1-43e6-b5db-8682bf69350e" name="Default Changelist" comment="" />
+      <created>1611510095164</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611510095164</updated>
+      <workItem from="1611510096192" duration="4727000" />
+      <workItem from="1611526798941" duration="6000" />
+      <workItem from="1611862166075" duration="5391000" />
+      <workItem from="1612380849805" duration="3474000" />
+      <workItem from="1612423187862" duration="3907000" />
+      <workItem from="1612509755865" duration="8115000" />
+      <workItem from="1612529419678" duration="1293000" />
+      <workItem from="1612551785541" duration="314000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="476" y="3" key="#PHP" timestamp="1612383621854">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="476" y="3" key="#PHP/0.0.1536.824/1920.0.1680.1010@0.0.1536.824" timestamp="1612383621854" />
+    <state x="4392" y="806" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611513434040">
+      <screen x="3840" y="628" width="1920" height="1040" />
+    </state>
+    <state x="4392" y="806" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/3840.628.1920.1040@3840.628.1920.1040" timestamp="1611513434040" />
+    <state x="578" y="255" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612381879551">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="255" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1680.1010@0.0.1536.824" timestamp="1612381879551" />
+    <state x="4562" y="950" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/3840.628.1920.1040@3840.628.1920.1040" timestamp="1611513440928" />
+    <state x="4605" y="830" key="#com.intellij.ide.util.MemberChooser" timestamp="1611865052552">
+      <screen x="3840" y="628" width="1920" height="1040" />
+    </state>
+    <state x="4605" y="830" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/3840.628.1920.1040@3840.628.1920.1040" timestamp="1611865052552" />
+    <state x="475" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612381768466">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="475" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/1920.0.1680.1010@0.0.1536.824" timestamp="1612381768466" />
+    <state x="2540" y="247" key="FileChooserDialogImpl" timestamp="1612552239496">
+      <screen x="1920" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2540" y="247" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1680.1010@1920.0.1680.1010" timestamp="1612552239496" />
+    <state x="606" y="193" key="NewPhpClassDialog" timestamp="1612518204738">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="606" y="193" key="NewPhpClassDialog/0.0.1536.824/1920.0.1680.1010@0.0.1536.824" timestamp="1612518204738" />
+    <state x="4597" y="871" key="NewPhpClassDialog/0.0.2560.1400/3840.628.1920.1040@3840.628.1920.1040" timestamp="1611865936275" />
+    <state x="635" y="351" key="NewPhpFileDialog" timestamp="1612382599951">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="635" y="351" key="NewPhpFileDialog/0.0.1536.824/1920.0.1680.1010@0.0.1536.824" timestamp="1612382599951" />
+    <state x="4634" y="1071" key="NewPhpFileDialog/0.0.2560.1400/3840.628.1920.1040@3840.628.1920.1040" timestamp="1611866609816" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1611867558733">
+      <screen x="3840" y="628" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.2560.1400/3840.628.1920.1040@3840.628.1920.1040" timestamp="1611867558733" />
+    <state x="3932" y="720" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611865337497">
+      <screen x="3840" y="628" width="1920" height="1040" />
+    </state>
+    <state x="3932" y="720" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1400/3840.628.1920.1040@3840.628.1920.1040" timestamp="1611865337497" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1612551841021">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1680.1010@0.0.1536.824" timestamp="1612551841021" />
+    <state x="1920" y="20" width="1061" height="811" maximized="true" key="dock-window-1" timestamp="1612383385471">
+      <screen x="1920" y="0" width="1680" height="1010" />
+    </state>
+    <state x="1920" y="20" width="1061" height="811" maximized="true" key="dock-window-1/0.0.1536.824/1920.0.1680.1010@0.0.1536.824" timestamp="1612383385471" />
+  </component>
+</project>
