@@ -3,17 +3,17 @@
 class FactorObserver implements SplObserver
 {
     private $factors = [
-        "Nutzer" => null,
-        "Risiko" => null,
-        "Preisbereitschaft" => null,
-        "Anzahl Nutzergruppen" => null,
-        "Budgetsituation Kunde" => null,
-        "Bedürfnishäufigkeit" => null,
-        "Skalierbarkeit" => null,
-        "Nutzungsabhängig" => null,
-        "Erfahrung_Kunde" => null,
-        "Nutzungserfassung" => null,
-        "Modell_am_Markt" => null
+        "Nutzer" => ["value" => null, "multiplier" => 1],
+        "Risiko" => ["value" => null, "multiplier" => 1],
+        "Preisbereitschaft" => ["value" => null, "multiplier" => 1],
+        "Anzahl Nutzergruppen" => ["value" => null, "multiplier" => 1],
+        "Budgetsituation Kunde" => ["value" => null, "multiplier" => 1],
+        "Bedürfnishäufigkeit" => ["value" => null, "multiplier" => 1],
+        "Skalierbarkeit" => ["value" => null, "multiplier" => 1],
+        "Nutzungsabhängig" => ["value" => null, "multiplier" => 1],
+        "Erfahrung_Kunde" => ["value" => null, "multiplier" => 1],
+        "Nutzungserfassung" => ["value" => null, "multiplier" => 1],
+        "Modell_am_Markt" => ["value" => null, "multiplier" => 1]
     ];
 
     public function getFactors()
