@@ -13,13 +13,17 @@
         }
     </style>
 </head>
-
 <body>
-<?php
 
-if(!isset($_GET["view"])) {
-    echo "Hier gehts zur <a href='survey'>Umfrage</a>";
-}
-?>
+<script>
+    window.questionnaire = <?php echo file_get_contents(__DIR__ . "/questionnaire.json"); ?>
+</script>
+
+<div id="surveyElement"></div>
+<div id="surveyResultElement"></div>
+<script src="scripts/index.js"></script>
+<div id="surveyResult"></div>
+
+
 </body>
 </html>
