@@ -24,7 +24,6 @@ function init() {
                 + '<div class="value">'+value+'</div></div>'
             );
           }
-          // $("#surveyResultElement").text(text);
         })
   });
 
