@@ -50,16 +50,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\SurveyJS" />
+      <recent name="C:\xampp\htdocs\SurveyJS\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\BKU\AntonBechtloff\Desktop\Holocron" />
       <recent name="D:\Users\BKU\AntonBechtloff\Downloads\SurveyJS\src\Questions\Kundensituation" />
       <recent name="D:\Users\BKU\AntonBechtloff\Downloads\SurveyJS\src\Questions\Kunden" />
       <recent name="D:\Users\BKU\AntonBechtloff\Downloads\SurveyJS\public" />
       <recent name="C:\xampp\htdocs\SurveyJS\public" />
-      <recent name="C:\xampp\htdocs\SurveyJS\scripts" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\SurveyJS" />
-      <recent name="C:\xampp\htdocs\SurveyJS\lib" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -80,7 +80,7 @@
       <workItem from="1612423187862" duration="3907000" />
       <workItem from="1612509755865" duration="8115000" />
       <workItem from="1612529419678" duration="1293000" />
-      <workItem from="1612551785541" duration="314000" />
+      <workItem from="1612551785541" duration="930000" />
     </task>
     <servers />
   </component>
