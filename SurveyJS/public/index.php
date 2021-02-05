@@ -17,7 +17,7 @@
 <body>
 <?php
 
-if(!isset($_REQUEST["view"])) {
+if(!isset($_GET["view"])) {
     echo "Hier gehts zur <a href='survey'>Umfrage</a>";
 } else {
     include_once("index.php");
