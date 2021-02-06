@@ -43,7 +43,4 @@ footer {
 .link:visited{
     color: #ffffff;
 }
-#navbar_image{
-    height: 2%;
-    width: auto;
-}
+img { width: 1%; height: auto }
