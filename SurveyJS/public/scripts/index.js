@@ -6,7 +6,7 @@ function init() {
   window.survey = new Survey.Model(json);
   survey.onComplete.add(function(result) {
 
-    fetch('holocron.anton-bechtloff.de/actions/saveResults.php', {
+    fetch('actions/saveResults.php', {
       method: 'post',
       body: JSON.stringify({"results": result.data})
     }).then(r => r.json())
