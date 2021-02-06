@@ -10,8 +10,12 @@
             Anton Bechtloff<br>
         </p>
         <p><strong>Kontakt:</strong> <br>
-            Telefon: 017634615294<br>
-            E-Mail: info@dbgraffiti.de
+            Telefon: 017634615231-017634615231<br>
+            E-Mail: <a href='mailto:anton.b@live.de'>anton.b@live.de</a></br></p>
+        <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
+            Anton Bechtloff <br>
+            Ringstraße 74<br>
+            64807 Dieburg <br></p>
         <p><strong>Haftungsausschluss: </strong><br><br><strong>Haftung für Inhalte</strong><br><br>
             Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
             Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7
@@ -84,6 +88,10 @@
             ''Extras > Einstellungen > Datenschutz > Cookies''); wir weisen Sie jedoch darauf hin, dass Sie in diesem
             Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die
             Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in
-            der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.</p><br></div>
+            der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.</p><br>
+        Website Impressum erstellt durch <a href="https://www.impressum-generator.de">impressum-generator.de</a> von der
+        <a href="https://www.kanzlei-hasselbach.de/">Kanzlei Hasselbach</a>
+    </div>
+
 
 <?php include("footer.html") ?>
