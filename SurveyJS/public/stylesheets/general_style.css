@@ -36,6 +36,7 @@ footer {
     padding: 3px;
     background-color: #333;
     color: #ffffff;
+    position: absolute;
 }
 .link:link{
     color: #ffffff;
