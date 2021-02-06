@@ -37,6 +37,9 @@ footer {
     background-color: #333;
     color: #ffffff;
 }
-footer:link{
+.link:link{
+    color: #ffffff;
+}
+.link:link:visited{
     color: #ffffff;
 }
