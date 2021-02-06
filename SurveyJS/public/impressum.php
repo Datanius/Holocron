@@ -11,7 +11,7 @@
         </p>
         <p><strong>Kontakt:</strong> <br>
             Telefon: 017634615231-017634615231<br>
-            E-Mail: <a href='mailto:anton.b@live.de'>anton.b@live.de</a></br></p>
+            E-Mail: <a href='mailto:mail@anton-bechtloff.de'>mail@anton-bechtloff.de</a></br></p>
         <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
             Anton Bechtloff <br>
             Ringstraße 74<br>
