@@ -29,8 +29,6 @@ class FactorObserver implements SplObserver
     public function calculate(string $questionKey, $value)
     {
         $questions = [
-            //  "risk_sharing" => RiskSharing::class
-
             //Kunden
             "kunden_welche_art" => Kunden_welche_art::class,
             //Kundensituation
@@ -59,7 +57,6 @@ class FactorObserver implements SplObserver
             "technik_erfassung_moeglich" => Technik_erfassung_moeglich::class,
             "technik_welche_erfassung" => Technik_welche_erfassung::class,
         ];
-
         $class = $questions[$questionKey];
         $class = new $class();
         $class->calculate($value, $this->factors);
