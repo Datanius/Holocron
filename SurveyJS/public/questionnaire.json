@@ -10,35 +10,35 @@
           "description": "Bitte gib den wichtigsten Kunden deines Services an",
           "choices": [
             {
-              "value": "item1",
+              "value": "DB Systel",
               "text": "DB Systel"
             },
             {
-              "value": "item2",
+              "value": "DB Fernverkehr",
               "text": "DB Fernverkehr"
             },
             {
-              "value": "item3",
+              "value": "DB Cargo",
               "text": "DB Cargo"
             },
             {
-              "value": "item4",
+              "value": "DB Energie",
               "text": "DB Energie"
             },
             {
-              "value": "item5",
+              "value": "DB Connect",
               "text": "DB Connect"
             },
             {
-              "value": "item6",
+              "value": "DB Vertrieb",
               "text": "DB Vertrieb"
             },
             {
-              "value": "item7",
+              "value": "DB Netz",
               "text": "DB Netz"
             },
             {
-              "value": "item8",
+              "value": "DB Regio",
               "text": "DB Regio"
             }
           ],
@@ -50,13 +50,22 @@
           "name": "kunden_welche_art",
           "title": "Welche Art von Kunden sind das?",
           "choices": [
-            "Endkunden außerhalb des Konzerns",
-            "Mitarbeiter der DB Systel",
+            {
+              "value": "Endkunden außerhalb des Konzerns",
+              "text": "Endkunden außerhalb des Konzerns"
+            },
+            {
+              "value": "Mitarbeiter der DB Systel",
+              "text": "Mitarbeiter der DB Systel"
+            },
             {
               "value": "Mitarbeiter des Konzerns",
-              "text": "Mitarbeiter mehrerer Tochterunternehmen des DB Konzerns"
+              "text": "Mitarbeiter des Konzerns"
             },
-            "Mitarbeiter eines Tochterunternehmens"
+            {
+              "value": "Mitarbeiter eines Tochterunternehmens",
+              "text": "Mitarbeiter eines Tochterunternehmens"
+            }
           ]
         },
         {
@@ -93,15 +102,15 @@
           "title": "Trägt der Kunde ein hohes Risiko?",
           "choices": [
             {
-              "value": "item1",
+              "value": "Ja",
               "text": "Ja"
             },
             {
-              "value": "item2",
+              "value": "Nein",
               "text": "Nein"
             },
             {
-              "value": "item3",
+              "value": "Weiß nicht",
               "text": "Weiß nicht"
             }
           ]
@@ -113,15 +122,15 @@
           "title": "Tragen alle Kunden ein hohes Risiko?",
           "choices": [
             {
-              "value": "item1",
+              "value": "Ja, alle",
               "text": "Ja, alle"
             },
             {
-              "value": "item2",
+              "value": "Nein, nur einer",
               "text": "Nein, nur einer"
             },
             {
-              "value": "item3",
+              "value": "Nein, keiner",
               "text": "Nein, keiner"
             }
           ]
@@ -144,11 +153,11 @@
           "title": "Welche Lösung hat der Kunde bisher eingesetzt?",
           "choices": [
             {
-              "value": "item1",
+              "value": "Manueller Prozess",
               "text": "Manueller Prozess"
             },
             {
-              "value": "item2",
+              "value": "Andere IT-Lösung",
               "text": "Andere IT-Lösung"
             }
           ],
@@ -175,15 +184,15 @@
           "title": "Gibt es unterschiedliche Nutzergruppen für den Service?",
           "choices": [
             {
-              "value": "item1",
+              "value": "Eine Nutzergruppe",
               "text": "Eine Nutzergruppe"
             },
             {
-              "value": "item2",
+              "value": "Zwei Nutzergruppen",
               "text": "Zwei Nutzergruppen"
             },
             {
-              "value": "item3",
+              "value": "Mehr als zwei Nutzergruppen",
               "text": "Mehr als zwei Nutzergruppen"
             }
           ]
@@ -194,15 +203,15 @@
           "title": "Haben die Kunden unterschiedliche Zahlungsbereitschaften?",
           "choices": [
             {
-              "value": "item1",
+              "value": "Ja",
               "text": "Ja"
             },
             {
-              "value": "item2",
+              "value": "Nein",
               "text": "Nein"
             },
             {
-              "value": "item3",
+              "value": "Weiß nicht",
               "text": "Weiß nicht"
             }
           ]
@@ -237,15 +246,15 @@
           "title": "Wie erfolgt die Bedürfnisbefriedigung",
           "choices": [
             {
-              "value": "item1",
+              "value": "Kurzfristig und temporär",
               "text": "Kurzfristig und temporär"
             },
             {
-              "value": "item2",
+              "value": "Dauerhaft",
               "text": "Dauerhaft"
             },
             {
-              "value": "item3",
+              "value": "Weiß nicht",
               "text": "Weiß nicht"
             }
           ]
@@ -262,15 +271,15 @@
           "title": "Gibt es vergleichbare Produkte oder alternative Lösungen am Markt?",
           "choices": [
             {
-              "value": "item1",
+              "value": "Ja",
               "text": "Ja"
             },
             {
-              "value": "item2",
+              "value": "Nein",
               "text": "Nein"
             },
             {
-              "value": "item3",
+              "value": "Weiß nicht",
               "text": "Weiß nicht"
             }
           ]
@@ -282,27 +291,27 @@
           "description": "Falls du die Modelle nicht kennst kannst du dich in DB Planet unter Servitization informieren",
           "choices": [
             {
-              "value": "item1",
-              "text": "Transaktionsbasiert"
+              "value": "Weiß nicht",
+              "text": "Weiß nicht"
             },
             {
-              "value": "item2",
+              "value": "Inhaltsbasiert",
               "text": "Inhaltsbasiert"
             },
             {
-              "value": "item3",
+              "value": "Pro Asset basiert",
               "text": "Pro Asset basiert"
             },
             {
-              "value": "item4",
+              "value": "Time and Material",
               "text": "Time and Material"
             },
             {
-              "value": "item5",
+              "value": "Volumenbasiert",
               "text": "Volumenbasiert"
             },
             {
-              "value": "item6",
+              "value": "Nutzungspauschale",
               "text": "Nutzungspauschale"
             }
           ],
@@ -315,15 +324,15 @@
           "title": "Wie entwickelt sich der Markt?",
           "choices": [
             {
-              "value": "item1",
+              "value": "Hohes Wachstum",
               "text": "Hohes Wachstum"
             },
             {
-              "value": "item2",
+              "value": "Mittleres Wachstum",
               "text": "Mittleres Wachstum"
             },
             {
-              "value": "item3",
+              "value": "Markt stagniert",
               "text": "Markt stagniert"
             }
           ]
@@ -345,15 +354,15 @@
           "title": "Wäre die Mehrzahl deiner Kunden bereit dich am Gewinn mitzubeteiligen?",
           "choices": [
             {
-              "value": "item1",
+              "value": "Ja",
               "text": "Ja"
             },
             {
-              "value": "item2",
+              "value": "Nein",
               "text": "Nein"
             },
             {
-              "value": "item3",
+              "value": "Weiß nicht",
               "text": "Weiß nicht"
             }
           ]
@@ -364,11 +373,11 @@
           "title": "Arbeiten wir eigenständig oder in Kooperation mit dem Kunden?",
           "choices": [
             {
-              "value": "item1",
+              "value": "Eigenständig",
               "text": "Eigenständig"
             },
             {
-              "value": "item2",
+              "value": "In Kooperation mit dem Kunden im Projekt",
               "text": "In Kooperation mit dem Kunden im Projekt"
             }
           ]
@@ -390,11 +399,11 @@
           "title": "Ist eine Erfassung der Nutzungsdauer, des Volumens oder der Anzahl der Nutzungen technisch mit vertretbarem Aufwand realisierbar? (Personenscharf) ",
           "choices": [
             {
-              "value": "item1",
+              "value": "Ja",
               "text": "Ja"
             },
             {
-              "value": "item2",
+              "value": "Nein",
               "text": "Nein"
             }
           ]
@@ -405,15 +414,15 @@
           "title": "Welche technische Erfassung ist denkbar?",
           "choices": [
             {
-              "value": "item1",
+              "value": "Pro Klick",
               "text": "Pro Klick"
             },
             {
-              "value": "item2",
+              "value": "Pro Nutzer",
               "text": "Pro Nutzer"
             },
             {
-              "value": "item3",
+              "value": "Nutzungsdauer",
               "text": "Nutzungsdauer"
             }
           ],
