@@ -53,5 +53,5 @@ foreach($results as $key => $result) {
 $Preismodell = new Preismodell();
 echo json_encode([
     "preismodell" => $Preismodell->calculate($FactorObserver->getFactors()),
-    "factors" => $FactorObserver->getFactors()
+   // "factors" => $FactorObserver->getFactors()
 ]);
