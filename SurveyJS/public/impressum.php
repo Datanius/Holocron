@@ -86,4 +86,4 @@
             Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in
             der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.</p><br></div>
 
-<?php include("footer.php") ?>
+<?php include("footer.html") ?>
