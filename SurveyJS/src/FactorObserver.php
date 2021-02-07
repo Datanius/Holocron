@@ -32,6 +32,7 @@ class FactorObserver implements SplObserver
             //Kunden
             "kunden_wer_ist"=>Kunden_wer_ist::class,
             "kunden_welche_art" => Kunden_welche_art::class,
+            "kunden_wie_viele" =>Kunden_wie_viele::class,
             //Kundensituation
             "kundensit_traegt_er_risiko" => Kundensit_traegt_er_risiko::class,
             "kundensit_tragen_sie_risiko" => Kundensit_tragen_sie_risiko::class,

@@ -9,6 +9,7 @@ require_once __DIR__ . "/../../src/Answer.php";
 //Kunden
 require_once __DIR__ . "/../../src/Questions/Kunden/Kunden_welche_art.php";
 require_once __DIR__ . "/../../src/Questions/Kunden/Kunden_wer_ist.php";
+require_once __DIR__ . "/../../src/Questions/Kunden/Kunden_wie_viele.php";
 //Kundennutzen
 require_once __DIR__ . "/../../src/Questions/Kundennutzen/Nutzen_wie_erfolgt.php";
 require_once __DIR__ . "/../../src/Questions/Kundennutzen/Nutzen_wie_haeufig.php";
