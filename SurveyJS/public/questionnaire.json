@@ -98,7 +98,7 @@
         {
           "type": "radiogroup",
           "name": "kundensit_traegt_er_risiko",
-          "visibleIf": "{kunden_wie_viele} = 'item1'",
+          "visibleIf": "{kunden_wie_viele} = 1",
           "title": "Trägt der Kunde ein hohes Risiko?",
           "choices": [
             {
@@ -118,7 +118,7 @@
         {
           "type": "radiogroup",
           "name": "kundensit_tragen_sie_risiko",
-          "visibleIf": "{kunden_wie_viele} = 'item2' or {kunden_wie_viele} = 'other'",
+          "visibleIf": "{kunden_wie_viele} = 2 or {kunden_wie_viele} = 'Mehr als 2'",
           "title": "Tragen alle Kunden ein hohes Risiko?",
           "choices": [
             {
@@ -167,14 +167,14 @@
         {
           "type": "rating",
           "name": "kundensit_loesung_aufwaendig",
-          "visibleIf": "{kundensit_bisherige_loesung} = 'item1' or {kundensit_bisherige_loesung} = 'other'",
+          "visibleIf": "{kundensit_bisherige_loesung} = 'Manueller Prozess' or {kundensit_bisherige_loesung} = 'other'",
           "title": "Wie aufwändig war diese Lösung?",
           "description": "1: Sehr niedriger Aufwand | 5: Sehr hoher Aufwand"
         },
         {
           "type": "rating",
           "name": "kundensit_bisherig_geeignet",
-          "visibleIf": "{kundensit_bisherige_loesung} = 'item2' or {kundensit_bisherige_loesung} = 'other'",
+          "visibleIf": "{kundensit_bisherige_loesung} = 'Andere IT-Lösung' or {kundensit_bisherige_loesung} = 'other'",
           "title": "Wie geeignet war die bisherige Lösung?",
           "description": "1: Sehr ungeeignet | 5: Sehr geeignet"
         },
