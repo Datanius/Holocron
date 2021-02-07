@@ -8,6 +8,7 @@ require_once __DIR__ . "/../../src/Answer.php";
 //Questions reinladen
 //Kunden
 require_once __DIR__ . "/../../src/Questions/Kunden/Kunden_welche_art.php";
+require_once __DIR__ . "/../../src/Questions/Kunden/Kunden_wer_ist.php";
 //Kundennutzen
 require_once __DIR__ . "/../../src/Questions/Kundennutzen/Nutzen_wie_erfolgt.php";
 require_once __DIR__ . "/../../src/Questions/Kundennutzen/Nutzen_wie_haeufig.php";
