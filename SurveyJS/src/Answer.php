@@ -40,6 +40,10 @@ class Answer implements SplSubject
 
     public function save()
     {
+        if (is_array($this->value) == true) {
+            $this->value = implode('#', $this->value);
+        }
+
         $PDO = new PDO("sqlite:" . __DIR__ . "/../resources/sqlite.db");
         $query = "INSERT INTO answers (`survey_identifier`, `question_key`, `answer`, `time`)";
         $query .= " VALUES (:survey_identifier, :question_key, :answer, :time)";
