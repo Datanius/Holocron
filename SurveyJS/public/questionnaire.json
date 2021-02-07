@@ -411,6 +411,7 @@
         {
           "type": "checkbox",
           "name": "technik_welche_erfassung",
+          "visibleIf": "{technik_erfassung_moeglich} = 'Ja'",
           "title": "Welche technische Erfassung ist denkbar?",
           "choices": [
             {
