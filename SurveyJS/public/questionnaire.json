@@ -1,436 +1,450 @@
 {
-  "pages": [
+ "pages": [
+  {
+   "name": "Kunden",
+   "elements": [
     {
-      "name": "Kunden",
-      "elements": [
-        {
-          "type": "dropdown",
-          "name": "kunden_wer_ist",
-          "title": "Wer ist der Kunde?",
-          "description": "Bitte gib den wichtigsten Kunden deines Services an",
-          "choices": [
-            {
-              "value": "DB Systel",
-              "text": "DB Systel"
-            },
-            {
-              "value": "DB Fernverkehr",
-              "text": "DB Fernverkehr"
-            },
-            {
-              "value": "DB Cargo",
-              "text": "DB Cargo"
-            },
-            {
-              "value": "DB Energie",
-              "text": "DB Energie"
-            },
-            {
-              "value": "DB Connect",
-              "text": "DB Connect"
-            },
-            {
-              "value": "DB Vertrieb",
-              "text": "DB Vertrieb"
-            },
-            {
-              "value": "DB Netz",
-              "text": "DB Netz"
-            },
-            {
-              "value": "DB Regio",
-              "text": "DB Regio"
-            }
-          ],
-          "hasOther": true,
-          "otherText": "Anderer, und zwar..."
-        },
-        {
-          "type": "checkbox",
-          "name": "kunden_welche_art",
-          "title": "Welche Art von Kunden sind das?",
-          "choices": [
-            {
-              "value": "Endkunden außerhalb des Konzerns",
-              "text": "Endkunden außerhalb des Konzerns"
-            },
-            {
-              "value": "Mitarbeiter der DB Systel",
-              "text": "Mitarbeiter der DB Systel"
-            },
-            {
-              "value": "Mitarbeiter des Konzerns",
-              "text": "Mitarbeiter des Konzerns"
-            },
-            {
-              "value": "Mitarbeiter eines Tochterunternehmens",
-              "text": "Mitarbeiter eines Tochterunternehmens"
-            }
-          ]
-        },
-        {
-          "type": "radiogroup",
-          "name": "kunden_wie_viele",
-          "title": "Wie viele Kunden gibt es für deinen Service?",
-          "choices": [
-            {
-              "value": "1",
-              "text": "1"
-            },
-            {
-              "value": "2",
-              "text": "2"
-            },
-            {
-              "value": "Mehr als 2",
-              "text": "Mehr als 2"
-            }
-          ],
-          "otherText": "Mehr als 2"
-        }
-      ],
-      "title": "Kunden",
-      "description": "Hier möchten wir ermitteln, wer dein Kunde ist."
+     "type": "dropdown",
+     "name": "kunden_wer_ist",
+     "title": "Wer ist der Hauptkunde?",
+     "description": "Bitte gib den wichtigsten Kunden deines Services an",
+     "choices": [
+      {
+       "value": "DB Systel",
+       "text": "DB Systel"
+      },
+      {
+       "value": "DB Fernverkehr",
+       "text": "DB Fernverkehr"
+      },
+      {
+       "value": "DB Cargo",
+       "text": "DB Cargo"
+      },
+      {
+       "value": "DB Energie",
+       "text": "DB Energie"
+      },
+      {
+       "value": "DB Connect",
+       "text": "DB Connect"
+      },
+      {
+       "value": "DB Vertrieb",
+       "text": "DB Vertrieb"
+      },
+      {
+       "value": "DB Netz",
+       "text": "DB Netz"
+      },
+      {
+       "value": "DB Regio",
+       "text": "DB Regio"
+      }
+     ],
+     "hasOther": true,
+     "otherText": "Anderer, und zwar..."
     },
     {
-      "name": "Kundensituation",
-      "elements": [
-        {
-          "type": "radiogroup",
-          "name": "kundensit_traegt_er_risiko",
-          "visibleIf": "{kunden_wie_viele} = 1",
-          "title": "Trägt der Kunde ein hohes Risiko?",
-          "choices": [
-            {
-              "value": "Ja",
-              "text": "Ja"
-            },
-            {
-              "value": "Nein",
-              "text": "Nein"
-            },
-            {
-              "value": "Weiß nicht",
-              "text": "Weiß nicht"
-            }
-          ]
-        },
-        {
-          "type": "radiogroup",
-          "name": "kundensit_tragen_sie_risiko",
-          "visibleIf": "{kunden_wie_viele} = 2 or {kunden_wie_viele} = 'Mehr als 2'",
-          "title": "Tragen alle Kunden ein hohes Risiko?",
-          "choices": [
-            {
-              "value": "Ja, alle",
-              "text": "Ja, alle"
-            },
-            {
-              "value": "Nein, nur einer",
-              "text": "Nein, nur einer"
-            },
-            {
-              "value": "Nein, keiner",
-              "text": "Nein, keiner"
-            }
-          ]
-        },
-        {
-          "type": "rating",
-          "name": "kundensit_zusammenbrechen_service",
-          "title": "Hätte ein Zusammenbrechen des Services einen kritischen Einfluss auf die gesamte Geschäftstätigkeit des Kunden?",
-          "description": "0: Geringer kritischer Einfluss | 5: Hoher kritischer Einfluss"
-        },
-        {
-          "type": "rating",
-          "name": "kundensit_kerngeschaeft_korreliert",
-          "title": "Wie stark ist der Service mit dem Kerngeschäft des Unternehmens des Kunden korreliert?",
-          "description": "1: Nicht korreliert | 5: Stark korreliert"
-        },
-        {
-          "type": "radiogroup",
-          "name": "kundensit_bisherige_loesung",
-          "title": "Welche Lösung hat der Kunde bisher eingesetzt?",
-          "choices": [
-            {
-              "value": "Manueller Prozess",
-              "text": "Manueller Prozess"
-            },
-            {
-              "value": "Andere IT-Lösung",
-              "text": "Andere IT-Lösung"
-            }
-          ],
-          "hasOther": true,
-          "otherText": "Sonstige, und zwar ..."
-        },
-        {
-          "type": "rating",
-          "name": "kundensit_loesung_aufwaendig",
-          "visibleIf": "{kundensit_bisherige_loesung} = 'Manueller Prozess' or {kundensit_bisherige_loesung} = 'other'",
-          "title": "Wie aufwändig war diese Lösung?",
-          "description": "1: Sehr niedriger Aufwand | 5: Sehr hoher Aufwand"
-        },
-        {
-          "type": "rating",
-          "name": "kundensit_bisherig_geeignet",
-          "visibleIf": "{kundensit_bisherige_loesung} = 'Andere IT-Lösung' or {kundensit_bisherige_loesung} = 'other'",
-          "title": "Wie geeignet war die bisherige Lösung?",
-          "description": "1: Sehr ungeeignet | 5: Sehr geeignet"
-        },
-        {
-          "type": "radiogroup",
-          "name": "kundensit_nutzergruppen",
-          "title": "Gibt es unterschiedliche Nutzergruppen für den Service?",
-          "choices": [
-            {
-              "value": "Eine Nutzergruppe",
-              "text": "Eine Nutzergruppe"
-            },
-            {
-              "value": "Zwei Nutzergruppen",
-              "text": "Zwei Nutzergruppen"
-            },
-            {
-              "value": "Mehr als zwei Nutzergruppen",
-              "text": "Mehr als zwei Nutzergruppen"
-            }
-          ]
-        },
-        {
-          "type": "radiogroup",
-          "name": "kundensit_zahlungsbereitschaft",
-          "title": "Haben die Kunden unterschiedliche Zahlungsbereitschaften?",
-          "choices": [
-            {
-              "value": "Ja",
-              "text": "Ja"
-            },
-            {
-              "value": "Nein",
-              "text": "Nein"
-            },
-            {
-              "value": "Weiß nicht",
-              "text": "Weiß nicht"
-            }
-          ]
-        },
-        {
-          "type": "rating",
-          "name": "kundensit_planungssicherheit",
-          "title": "Wie sieht die Planungssicherheit bzw. Preisstabilität für den Kunden über die nächsten Jahre aus?",
-          "description": "1: Keine Sicherheit | 5: Hohe Planungssicherheit"
-        },
-        {
-          "type": "rating",
-          "name": "kundensit_budgetsituation",
-          "title": "Wie sieht die Budgetsituation und der finanzielle Spielraum des Kunden aus?",
-          "description": "1: Enge Budgetsituation | 5: Sehr gute Budgetsituation"
-        }
-      ],
-      "title": "Hier möchten wir die Situation deines Kunden verstehen."
+     "type": "checkbox",
+     "name": "kunden_welche_art",
+     "title": "Welche Art von Kunde ist das?",
+     "choices": [
+      {
+       "value": "Endkunden außerhalb des Konzerns",
+       "text": "Endkunde außerhalb des Konzerns"
+      },
+      {
+       "value": "Mitarbeiter der DB Systel",
+       "text": "Mitarbeiter der DB Systel"
+      },
+      {
+       "value": "Mitarbeiter des Konzerns",
+       "text": "Mitarbeiter der DB Konzernzentrale"
+      },
+      {
+       "value": "Mitarbeiter eines Tochterunternehmens",
+       "text": "Mitarbeiter eines DB-Tochterunternehmens"
+      }
+     ]
     },
     {
-      "name": "Kundennutzen",
-      "elements": [
-        {
-          "type": "rating",
-          "name": "nutzen_wie_haeufig",
-          "title": "Wie häufig muss das Bedürfnis befriedigt werden?",
-          "description": "1: Sehr selten | 5: Sehr oft"
-        },
-        {
-          "type": "radiogroup",
-          "name": "nutzen_wie_erfolgt",
-          "title": "Wie erfolgt die Bedürfnisbefriedigung",
-          "choices": [
-            {
-              "value": "Kurzfristig und temporär",
-              "text": "Kurzfristig und temporär"
-            },
-            {
-              "value": "Dauerhaft",
-              "text": "Dauerhaft"
-            },
-            {
-              "value": "Weiß nicht",
-              "text": "Weiß nicht"
-            }
-          ]
-        }
-      ],
-      "title": "Hier möchten wir den Nutzen des Services für deinen Kunden ermitteln."
-    },
-    {
-      "name": "Markt und Wettbewerb",
-      "elements": [
-        {
-          "type": "radiogroup",
-          "name": "markt_vergleichbare_produkte",
-          "title": "Gibt es vergleichbare Produkte oder alternative Lösungen am Markt?",
-          "choices": [
-            {
-              "value": "Ja",
-              "text": "Ja"
-            },
-            {
-              "value": "Nein",
-              "text": "Nein"
-            },
-            {
-              "value": "Weiß nicht",
-              "text": "Weiß nicht"
-            }
-          ]
-        },
-        {
-          "type": "dropdown",
-          "name": "markt_preismodell_alt",
-          "title": "Welches Preismodell wird für alternative Services verwendet?",
-          "description": "Falls du die Modelle nicht kennst kannst du dich in DB Planet unter Servitization informieren",
-          "choices": [
-            {
-              "value": "Weiß nicht",
-              "text": "Weiß nicht"
-            },
-            {
-              "value": "Inhaltsbasiert",
-              "text": "Inhaltsbasiert"
-            },
-            {
-              "value": "Pro Asset basiert",
-              "text": "Pro Asset basiert"
-            },
-            {
-              "value": "Time and Material",
-              "text": "Time and Material"
-            },
-            {
-              "value": "Volumenbasiert",
-              "text": "Volumenbasiert"
-            },
-            {
-              "value": "Nutzungspauschale",
-              "text": "Nutzungspauschale"
-            }
-          ],
-          "hasOther": true,
-          "otherText": "Sonstiges, und zwar ..."
-        },
-        {
-          "type": "radiogroup",
-          "name": "markt_entwicklung",
-          "title": "Wie entwickelt sich der Markt?",
-          "choices": [
-            {
-              "value": "Hohes Wachstum",
-              "text": "Hohes Wachstum"
-            },
-            {
-              "value": "Mittleres Wachstum",
-              "text": "Mittleres Wachstum"
-            },
-            {
-              "value": "Markt stagniert",
-              "text": "Markt stagniert"
-            }
-          ]
-        },
-        {
-          "type": "rating",
-          "name": "markt_eigenrealisierung",
-          "title": "Wie aufwändig ist die Eigenrealisierung durch den Kunden selbst?",
-          "description": "1: Sehr geringer Aufwand | 5: Sehr hoher Aufwand\n"
-        }
-      ]
-    },
-    {
-      "name": "Netzwerk",
-      "elements": [
-        {
-          "type": "radiogroup",
-          "name": "netzwerk_gewinnbeteiligung",
-          "title": "Wäre die Mehrzahl deiner Kunden bereit dich am Gewinn mitzubeteiligen?",
-          "choices": [
-            {
-              "value": "Ja",
-              "text": "Ja"
-            },
-            {
-              "value": "Nein",
-              "text": "Nein"
-            },
-            {
-              "value": "Weiß nicht",
-              "text": "Weiß nicht"
-            }
-          ]
-        },
-        {
-          "type": "radiogroup",
-          "name": "netzwerk_kunden_kooperation",
-          "title": "Arbeiten wir eigenständig oder in Kooperation mit dem Kunden?",
-          "choices": [
-            {
-              "value": "Eigenständig",
-              "text": "Eigenständig"
-            },
-            {
-              "value": "In Kooperation mit dem Kunden im Projekt",
-              "text": "In Kooperation mit dem Kunden im Projekt"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Technische Rahmenbedingungen",
-      "elements": [
-        {
-          "type": "rating",
-          "name": "technik_hohe_fixkosten",
-          "title": "Bringt der Service hohe Fixkosten mit sich?",
-          "description": "1: Sehr niedrige Fixkosten | 5: Sehr hohe Fixkosten"
-        },
-        {
-          "type": "radiogroup",
-          "name": "technik_erfassung_moeglich",
-          "title": "Ist eine Erfassung der Nutzungsdauer, des Volumens oder der Anzahl der Nutzungen technisch mit vertretbarem Aufwand realisierbar? (Personenscharf) ",
-          "choices": [
-            {
-              "value": "Ja",
-              "text": "Ja"
-            },
-            {
-              "value": "Nein",
-              "text": "Nein"
-            }
-          ]
-        },
-        {
-          "type": "checkbox",
-          "name": "technik_welche_erfassung",
-          "visibleIf": "{technik_erfassung_moeglich} = 'Ja'",
-          "title": "Welche technische Erfassung ist denkbar?",
-          "choices": [
-            {
-              "value": "Pro Klick",
-              "text": "Pro Klick"
-            },
-            {
-              "value": "Pro Nutzer",
-              "text": "Pro Nutzer"
-            },
-            {
-              "value": "Nutzungsdauer",
-              "text": "Nutzungsdauer"
-            }
-          ],
-          "hasOther": true,
-          "otherText": "Sonstige, und zwar..."
-        }
-      ]
+     "type": "radiogroup",
+     "name": "kunden_wie_viele",
+     "title": "Wie viele potentielle Kunden gibt es für deinen Service?",
+     "valueName": "unknown",
+     "defaultValue": "other",
+     "choices": [
+      {
+       "value": "1",
+       "text": "1"
+      },
+      {
+       "value": "2-10",
+       "text": "2-10"
+      },
+      {
+       "value": "10-100",
+       "text": "10-100"
+      },
+      {
+       "value": "Mehr als 100",
+       "text": "Mehr als 100"
+      },
+      {
+       "value": "Kann ich nicht sagen",
+       "text": "Kann ich nicht sagen"
+      }
+     ],
+     "otherText": "Kann ich nicht sagen"
     }
-  ]
+   ],
+   "title": "Kunden",
+   "description": "Hier möchten wir ermitteln, wer Deine potentiellen Kunden sind. Kunden im Sinne von Geldgebern, Auftraggebern, denen, die den echten Need haben, den Dein Service befriedigen soll. Wir nehmen hierfür fortan das Synonym \"Kunde\"."
+  },
+  {
+   "name": "Kundensituation",
+   "elements": [
+    {
+     "type": "boolean",
+     "name": "kundensit_risiko_enable",
+     "title": "Kannst Du eine Aussage zu dem Risiko des Hauptkunden in dem betroffenen Geschäftsfeld machen?",
+     "labelTrue": "Ja, kann ich",
+     "labelFalse": "Nein, nicht möglich",
+     "valueTrue": "yes",
+     "valueFalse": "no"
+    },
+    {
+     "type": "rating",
+     "name": "question1",
+     "visibleIf": "{kundensit_risiko_enable} = 'yes'",
+     "title": "Wie hoch schätzt Du das Risiko ein, welches der Hauptkunde trägt?",
+     "description": "1: Geringes Risiko; 5: Sehr hohes Risiko"
+    },
+    {
+     "type": "radiogroup",
+     "name": "kundensit_tragen_sie_risiko",
+     "visibleIf": "{unknown} = 2 or {unknown} = 'Mehr als 2'",
+     "title": "Tragen alle Kunden ein hohes Risiko?",
+     "choices": [
+      {
+       "value": "Ja, alle",
+       "text": "Ja, alle"
+      },
+      {
+       "value": "Die meisten",
+       "text": "Die meisten"
+      },
+      {
+       "value": "Nein, nur einer",
+       "text": "Nein, nur einer"
+      },
+      {
+       "value": "Die wenigsten",
+       "text": "Die wenigsten"
+      },
+      {
+       "value": "Nein, keiner",
+       "text": "Nein, keiner"
+      }
+     ]
+    },
+    {
+     "type": "rating",
+     "name": "kundensit_zusammenbrechen_service",
+     "title": "Hätte ein Zusammenbrechen des Services einen kritischen Einfluss auf die gesamte Geschäftstätigkeit des Haputkunden?",
+     "description": "0: Geringer kritischer Einfluss; ein Stop des Service wäre nicht gravierend | 5: Hoher kritischer Einfluss; ein Stop des Service hätte verheerende Auswirkungen für den Kunden"
+    },
+    {
+     "type": "rating",
+     "name": "kundensit_kerngeschaeft_korreliert",
+     "title": "Wie stark ist der Service mit dem Kerngeschäft des Unternehmens des Kunden korreliert?",
+     "description": "1: Nicht korreliert | 5: Stark korreliert"
+    },
+    {
+     "type": "radiogroup",
+     "name": "kundensit_bisherige_loesung",
+     "title": "Welche Lösung hat der Kunde bisher eingesetzt?",
+     "choices": [
+      {
+       "value": "Manueller Prozess",
+       "text": "Manueller Prozess"
+      },
+      {
+       "value": "Andere IT-Lösung",
+       "text": "Andere IT-Lösung"
+      }
+     ],
+     "hasOther": true,
+     "otherText": "Sonstige, und zwar ..."
+    },
+    {
+     "type": "rating",
+     "name": "kundensit_loesung_aufwaendig",
+     "visibleIf": "{kundensit_bisherige_loesung} = 'Manueller Prozess' or {kundensit_bisherige_loesung} = 'other'",
+     "title": "Wie aufwändig war diese Lösung?",
+     "description": "1: Sehr niedriger Aufwand | 5: Sehr hoher Aufwand"
+    },
+    {
+     "type": "rating",
+     "name": "kundensit_bisherig_geeignet",
+     "visibleIf": "{kundensit_bisherige_loesung} = 'Andere IT-Lösung' or {kundensit_bisherige_loesung} = 'other'",
+     "title": "Wie geeignet war die bisherige Lösung?",
+     "description": "1: Sehr ungeeignet | 5: Sehr geeignet"
+    },
+    {
+     "type": "radiogroup",
+     "name": "kundensit_nutzergruppen",
+     "title": "Gibt es unterschiedliche Nutzergruppen für den Service?",
+     "choices": [
+      {
+       "value": "Eine Nutzergruppe",
+       "text": "Eine Nutzergruppe"
+      },
+      {
+       "value": "Zwei Nutzergruppen",
+       "text": "Zwei Nutzergruppen"
+      },
+      {
+       "value": "Mehr als zwei Nutzergruppen",
+       "text": "Mehr als zwei Nutzergruppen"
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "kundensit_zahlungsbereitschaft",
+     "title": "Haben die Kunden unterschiedliche Zahlungsbereitschaften?",
+     "choices": [
+      {
+       "value": "Ja",
+       "text": "Ja"
+      },
+      {
+       "value": "Nein",
+       "text": "Nein"
+      },
+      {
+       "value": "Weiß nicht",
+       "text": "Weiß nicht"
+      }
+     ]
+    },
+    {
+     "type": "rating",
+     "name": "kundensit_planungssicherheit",
+     "title": "Wie sieht die Planungssicherheit bzw. Preisstabilität für den Kunden über die nächsten Jahre aus?",
+     "description": "1: Keine Sicherheit | 5: Hohe Planungssicherheit"
+    },
+    {
+     "type": "rating",
+     "name": "kundensit_budgetsituation",
+     "title": "Wie sieht die Budgetsituation und der finanzielle Spielraum des Kunden aus?",
+     "description": "1: Enge Budgetsituation | 5: Sehr gute Budgetsituation"
+    }
+   ],
+   "title": "Hier möchten wir die Situation deines Kunden verstehen."
+  },
+  {
+   "name": "Kundennutzen",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "nutzen_wie_haeufig",
+     "title": "Wie häufig muss das Bedürfnis befriedigt werden?",
+     "description": "1: Sehr selten | 5: Sehr oft"
+    },
+    {
+     "type": "radiogroup",
+     "name": "nutzen_wie_erfolgt",
+     "title": "Wie erfolgt die Bedürfnisbefriedigung",
+     "choices": [
+      {
+       "value": "Kurzfristig und temporär",
+       "text": "Kurzfristig und temporär"
+      },
+      {
+       "value": "Dauerhaft",
+       "text": "Dauerhaft"
+      },
+      {
+       "value": "Weiß nicht",
+       "text": "Weiß nicht"
+      }
+     ]
+    }
+   ],
+   "title": "Hier möchten wir den Nutzen des Services für deinen Kunden ermitteln."
+  },
+  {
+   "name": "Markt und Wettbewerb",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "markt_vergleichbare_produkte",
+     "title": "Gibt es vergleichbare Produkte oder alternative Lösungen am Markt?",
+     "choices": [
+      {
+       "value": "Ja",
+       "text": "Ja"
+      },
+      {
+       "value": "Nein",
+       "text": "Nein"
+      },
+      {
+       "value": "Weiß nicht",
+       "text": "Weiß nicht"
+      }
+     ]
+    },
+    {
+     "type": "dropdown",
+     "name": "markt_preismodell_alt",
+     "title": "Welches Preismodell wird für alternative Services verwendet?",
+     "description": "Falls du die Modelle nicht kennst kannst du dich in DB Planet unter Servitization informieren",
+     "choices": [
+      {
+       "value": "Weiß nicht",
+       "text": "Weiß nicht"
+      },
+      {
+       "value": "Inhaltsbasiert",
+       "text": "Inhaltsbasiert"
+      },
+      {
+       "value": "Pro Asset basiert",
+       "text": "Pro Asset basiert"
+      },
+      {
+       "value": "Time and Material",
+       "text": "Time and Material"
+      },
+      {
+       "value": "Volumenbasiert",
+       "text": "Volumenbasiert"
+      },
+      {
+       "value": "Nutzungspauschale",
+       "text": "Nutzungspauschale"
+      }
+     ],
+     "hasOther": true,
+     "otherText": "Sonstiges, und zwar ..."
+    },
+    {
+     "type": "radiogroup",
+     "name": "markt_entwicklung",
+     "title": "Wie entwickelt sich der Markt?",
+     "choices": [
+      {
+       "value": "Hohes Wachstum",
+       "text": "Hohes Wachstum"
+      },
+      {
+       "value": "Mittleres Wachstum",
+       "text": "Mittleres Wachstum"
+      },
+      {
+       "value": "Markt stagniert",
+       "text": "Markt stagniert"
+      }
+     ]
+    },
+    {
+     "type": "rating",
+     "name": "markt_eigenrealisierung",
+     "title": "Wie aufwändig ist die Eigenrealisierung durch den Kunden selbst?",
+     "description": "1: Sehr geringer Aufwand | 5: Sehr hoher Aufwand\n"
+    }
+   ]
+  },
+  {
+   "name": "Netzwerk",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "netzwerk_gewinnbeteiligung",
+     "title": "Wäre die Mehrzahl deiner Kunden bereit dich am Gewinn mitzubeteiligen?",
+     "choices": [
+      {
+       "value": "Ja",
+       "text": "Ja"
+      },
+      {
+       "value": "Nein",
+       "text": "Nein"
+      },
+      {
+       "value": "Weiß nicht",
+       "text": "Weiß nicht"
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "netzwerk_kunden_kooperation",
+     "title": "Arbeiten wir eigenständig oder in Kooperation mit dem Kunden?",
+     "choices": [
+      {
+       "value": "Eigenständig",
+       "text": "Eigenständig"
+      },
+      {
+       "value": "In Kooperation mit dem Kunden im Projekt",
+       "text": "In Kooperation mit dem Kunden im Projekt"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Technische Rahmenbedingungen",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "technik_hohe_fixkosten",
+     "title": "Bringt der Service hohe Fixkosten mit sich?",
+     "description": "1: Sehr niedrige Fixkosten | 5: Sehr hohe Fixkosten"
+    },
+    {
+     "type": "radiogroup",
+     "name": "technik_erfassung_moeglich",
+     "title": "Ist eine Erfassung der Nutzungsdauer, des Volumens oder der Anzahl der Nutzungen technisch mit vertretbarem Aufwand realisierbar? (Personenscharf) ",
+     "choices": [
+      {
+       "value": "Ja",
+       "text": "Ja"
+      },
+      {
+       "value": "Nein",
+       "text": "Nein"
+      }
+     ]
+    },
+    {
+     "type": "checkbox",
+     "name": "technik_welche_erfassung",
+     "visibleIf": "{technik_erfassung_moeglich} = 'Ja'",
+     "title": "Welche technische Erfassung ist denkbar?",
+     "choices": [
+      {
+       "value": "Pro Klick",
+       "text": "Pro Klick"
+      },
+      {
+       "value": "Pro Nutzer",
+       "text": "Pro Nutzer"
+      },
+      {
+       "value": "Nutzungsdauer",
+       "text": "Nutzungsdauer"
+      }
+     ],
+     "hasOther": true,
+     "otherText": "Sonstige, und zwar..."
+    }
+   ]
+  }
+ ]
 }
