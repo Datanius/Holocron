@@ -3,17 +3,17 @@
 class FactorObserver implements SplObserver
 {
     private $factors = [
-        "Nutzer" => ["value" => null, "multiplier" => 1],
-        "Risiko" => ["value" => null, "multiplier" => 1],
-        "Preisbereitschaft" => ["value" => null, "multiplier" => 1],
-        "Anzahl Nutzergruppen" => ["value" => null, "multiplier" => 1],
-        "Budgetsituation Kunde" => ["value" => null, "multiplier" => 1],
-        "Bedürfnishäufigkeit" => ["value" => null, "multiplier" => 1],
-        "Skalierbarkeit" => ["value" => null, "multiplier" => 1],
-        "Nutzungsabhängig" => ["value" => null, "multiplier" => 1],
-        "Erfahrung_Kunde" => ["value" => null, "multiplier" => 1],
-        "Nutzungserfassung" => ["value" => null, "multiplier" => 1],
-        "Modell_am_Markt" => ["value" => null, "multiplier" => 1]
+        "Nutzer" => ["value" => null, "multiplier" => 1, "called"=>null],
+        "Risiko" => ["value" => null, "multiplier" => 1], "called"=>null,
+        "Preisbereitschaft" => ["value" => null, "multiplier" => 1, "called"=>null],
+        "Anzahl Nutzergruppen" => ["value" => null, "multiplier" => 1,"called"=>null],
+        "Budgetsituation Kunde" => ["value" => null, "multiplier" => 1,"called"=>null],
+        "Bedürfnishäufigkeit" => ["value" => null, "multiplier" => 1,"called"=>null],
+        "Skalierbarkeit" => ["value" => null, "multiplier" => 1,"called" =>null],
+        "Nutzungsabhängig" => ["value" => null, "multiplier" => 1,"called"=>null],
+        "Erfahrung_Kunde" => ["value" => null, "multiplier" => 1,"called"=>null],
+        "Nutzungserfassung" => ["value" => null, "multiplier" => 1,"called"=>null],
+        "Modell_am_Markt" => ["value" => null, "multiplier" => 1,"called"=>null]
     ];
 
     public function getFactors()
