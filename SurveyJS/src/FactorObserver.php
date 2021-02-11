@@ -3,17 +3,17 @@
 class FactorObserver implements SplObserver
 {
     private $factors = [
-        "Nutzer" => ["value" => null, "multiplier" => 1],
-        "Risiko" => ["value" => null, "multiplier" => 1],
-        "Preisbereitschaft" => ["value" => null, "multiplier" => 1],
-        "Anzahl Nutzergruppen" => ["value" => null, "multiplier" => 1],
-        "Budgetsituation Kunde" => ["value" => null, "multiplier" => 1],
-        "Bedürfnishäufigkeit" => ["value" => null, "multiplier" => 1],
-        "Skalierbarkeit" => ["value" => null, "multiplier" => 1],
-        "Nutzungsabhängig" => ["value" => null, "multiplier" => 1],
-        "Erfahrung_Kunde" => ["value" => null, "multiplier" => 1],
-        "Nutzungserfassung" => ["value" => null, "multiplier" => 1],
-        "Modell_am_Markt" => ["value" => null, "multiplier" => 1]
+        "Nutzer" => ["values" => [], "multiplier" => 1],
+        "Risiko" => ["values" => [], "multiplier" => 1],
+        "Preisbereitschaft" => ["values" => [], "multiplier" => 1],
+        "Anzahl Nutzergruppen" => ["values" => [], "multiplier" => 1],
+        "Budgetsituation Kunde" => ["values" => [], "multiplier" => 1],
+        "Bedürfnishäufigkeit" => ["values" => [], "multiplier" => 1],
+        "Skalierbarkeit" => ["values" => [], "multiplier" => 1],
+        "Nutzungsabhängig" => ["values" => [],  "multiplier" => 1],
+        "Erfahrung_Kunde" => ["values" => [], "multiplier" => 1],
+        "Nutzungserfassung" => ["values" => [], "multiplier" => 1],
+        "Modell_am_Markt" => ["values" => [], "multiplier" => 1]
     ];
 
     public function getFactors()
@@ -62,6 +62,9 @@ class FactorObserver implements SplObserver
             "technik_welche_erfassung" => Technik_welche_erfassung::class,
         ];
         $class = $questions[$questionKey];
+        if(!$class){ //Default Handler
+            return;
+        }
         $class = new $class();
         $class->calculate($value, $this->factors);
     }
