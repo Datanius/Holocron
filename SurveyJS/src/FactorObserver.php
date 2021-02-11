@@ -15,6 +15,16 @@ class FactorObserver implements SplObserver
         "Nutzungserfassung" => ["value" => null, "multiplier" => 1,"called"=>null],
         "Modell_am_Markt" => ["value" => null, "multiplier" => 1,"called"=>null]
     ];
+private $ko_pricing_models = [
+    "Time and Material" =>false,
+    "Transaktionsbasiert" =>false,
+    "Inhaltsbasiert" =>false,
+    "Volumenbasiert" =>false,
+    "Nutzungspauschale" =>false,
+    "Pro Asset basiert" =>false
+];
+
+    
 
     public function getFactors()
     {

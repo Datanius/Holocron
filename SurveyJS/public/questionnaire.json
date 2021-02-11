@@ -7,7 +7,7 @@
      "type": "dropdown",
      "name": "kunden_wer_ist",
      "title": "Wer ist der Hauptkunde?",
-     "description": "Bitte gib den wichtigsten Kunden deines Services an",
+     "description": "Bitte gib den wichtigsten Kunden deines Services an. Du bist nicht so sicher, was mit \"Kunde\" gemeint ist? S.o.",
      "choices": [
       {
        "value": "DB Systel",
@@ -43,12 +43,13 @@
       }
      ],
      "hasOther": true,
-     "otherText": "Anderer, und zwar..."
+     "otherText": "Anderer, und zwar...",
+     "optionsCaption": "Bitte auswählen"
     },
     {
      "type": "checkbox",
      "name": "kunden_welche_art",
-     "title": "Welche Art von Kunde ist das?",
+     "title": "Welche Art von Hauptkunde ist das?",
      "choices": [
       {
        "value": "Endkunden außerhalb des Konzerns",
@@ -108,7 +109,9 @@
     {
      "type": "boolean",
      "name": "kundensit_risiko_enable",
-     "title": "Kannst Du eine Aussage zu dem Risiko des Hauptkunden in dem betroffenen Geschäftsfeld machen?",
+     "title": "Kannst Du eine Aussage zum Geschäftsrisiko des Hauptkunden in dem betroffenen Geschäftsfeld machen?",
+     "defaultValue": "yes",
+     "isRequired": true,
      "labelTrue": "Ja, kann ich",
      "labelFalse": "Nein, nicht möglich",
      "valueTrue": "yes",
@@ -118,13 +121,16 @@
      "type": "rating",
      "name": "question1",
      "visibleIf": "{kundensit_risiko_enable} = 'yes'",
+     "indent": 4,
      "title": "Wie hoch schätzt Du das Risiko ein, welches der Hauptkunde trägt?",
-     "description": "1: Geringes Risiko; 5: Sehr hohes Risiko"
+     "minRateDescription": "Geringed Risiko",
+     "maxRateDescription": "Sehr hohes Risiko"
     },
     {
      "type": "radiogroup",
      "name": "kundensit_tragen_sie_risiko",
-     "visibleIf": "{unknown} = 2 or {unknown} = 'Mehr als 2'",
+     "visibleIf": "{unknown} <> 1 or {unknown} <> 'Kann ich nicht sagen'",
+     "indent": 4,
      "title": "Tragen alle Kunden ein hohes Risiko?",
      "choices": [
       {
@@ -136,12 +142,12 @@
        "text": "Die meisten"
       },
       {
-       "value": "Nein, nur einer",
-       "text": "Nein, nur einer"
-      },
-      {
        "value": "Die wenigsten",
        "text": "Die wenigsten"
+      },
+      {
+       "value": "Nein, nur einer",
+       "text": "Nein, nur einer"
       },
       {
        "value": "Nein, keiner",
@@ -152,14 +158,35 @@
     {
      "type": "rating",
      "name": "kundensit_zusammenbrechen_service",
+     "visibleIf": "{kundensit_risiko_enable} = 'yes'",
+     "indent": 4,
      "title": "Hätte ein Zusammenbrechen des Services einen kritischen Einfluss auf die gesamte Geschäftstätigkeit des Haputkunden?",
-     "description": "0: Geringer kritischer Einfluss; ein Stop des Service wäre nicht gravierend | 5: Hoher kritischer Einfluss; ein Stop des Service hätte verheerende Auswirkungen für den Kunden"
+     "description": "0: Geringer kritischer Einfluss; ein Stop des Service wäre nicht gravierend | 5: Hoher kritischer Einfluss; ein Stop des Service hätte verheerende Auswirkungen für den Kunden",
+     "minRateDescription": "gering",
+     "maxRateDescription": "kritisch"
     },
     {
      "type": "rating",
      "name": "kundensit_kerngeschaeft_korreliert",
-     "title": "Wie stark ist der Service mit dem Kerngeschäft des Unternehmens des Kunden korreliert?",
-     "description": "1: Nicht korreliert | 5: Stark korreliert"
+     "title": "Wie stark ist der Service mit dem Kerngeschäft des Unternehmens des Hauptkunden korreliert?",
+     "description": "Wir möchten ein Gefühl dafür bekommmen, wie weit der Service für das Kerngeschäft des Kunden etwas gänzlich neues/anderes ist oder wie weit er direkt den Hauptkunden in seinem Kerngeschäft unterstützt. ",
+     "enableIf": "{kundensit_checkbox_correlation_unknown} <> ['unknown']",
+     "isRequired": true,
+     "minRateDescription": "Nicht korreliert",
+     "maxRateDescription": "Stark korrelliert"
+    },
+    {
+     "type": "checkbox",
+     "name": "kundensit_checkbox_correlation_unknown",
+     "startWithNewLine": false,
+     "title": "Alternative Antwortmöglichkeit:",
+     "hideNumber": true,
+     "choices": [
+      {
+       "value": "unknown",
+       "text": "Unbekannt"
+      }
+     ]
     },
     {
      "type": "radiogroup",
@@ -183,14 +210,18 @@
      "name": "kundensit_loesung_aufwaendig",
      "visibleIf": "{kundensit_bisherige_loesung} = 'Manueller Prozess' or {kundensit_bisherige_loesung} = 'other'",
      "title": "Wie aufwändig war diese Lösung?",
-     "description": "1: Sehr niedriger Aufwand | 5: Sehr hoher Aufwand"
+     "description": "Bitte schätze den Aufwand für die alternative Lösung ein: Hier fließen Faktoren wie benötigte Zeit, Komplexität und Unsicherheit ein",
+     "rateMin": 2,
+     "minRateDescription": "Sehr niedriger Aufwand",
+     "maxRateDescription": "Sehr hoher Aufwand"
     },
     {
      "type": "rating",
      "name": "kundensit_bisherig_geeignet",
      "visibleIf": "{kundensit_bisherige_loesung} = 'Andere IT-Lösung' or {kundensit_bisherige_loesung} = 'other'",
      "title": "Wie geeignet war die bisherige Lösung?",
-     "description": "1: Sehr ungeeignet | 5: Sehr geeignet"
+     "minRateDescription": "Total ungeeignet",
+     "maxRateDescription": "Sehr gut"
     },
     {
      "type": "radiogroup",
@@ -234,13 +265,44 @@
      "type": "rating",
      "name": "kundensit_planungssicherheit",
      "title": "Wie sieht die Planungssicherheit bzw. Preisstabilität für den Kunden über die nächsten Jahre aus?",
-     "description": "1: Keine Sicherheit | 5: Hohe Planungssicherheit"
+     "enableIf": "{kundensit_checkbox_planungssicherheit_unknown} <> ['unknown']",
+     "minRateDescription": "Keine Planungssicherheit",
+     "maxRateDescription": "Hohe Planungssicherheit"
+    },
+    {
+     "type": "checkbox",
+     "name": "kundensit_checkbox_planungssicherheit_unknown",
+     "startWithNewLine": false,
+     "title": "Alternative Antwortmöglichkeit:",
+     "hideNumber": true,
+     "choices": [
+      {
+       "value": "unknown",
+       "text": "Unbekannt"
+      }
+     ]
     },
     {
      "type": "rating",
      "name": "kundensit_budgetsituation",
      "title": "Wie sieht die Budgetsituation und der finanzielle Spielraum des Kunden aus?",
-     "description": "1: Enge Budgetsituation | 5: Sehr gute Budgetsituation"
+     "description": "Über welche finanziellen Mittel verfügt der Hauptkunde Deiner Einschätzung nach?",
+     "enableIf": "{kundensit_checkbox_budget_unknown} <> ['unknown']",
+     "minRateDescription": "Sehr knappes Budget",
+     "maxRateDescription": "Hohes Budget"
+    },
+    {
+     "type": "checkbox",
+     "name": "kundensit_checkbox_budget_unknown",
+     "startWithNewLine": false,
+     "title": "Alternative Antwortmöglichkeit:",
+     "hideNumber": true,
+     "choices": [
+      {
+       "value": "unknown",
+       "text": "Unbekannt"
+      }
+     ]
     }
    ],
    "title": "Hier möchten wir die Situation deines Kunden verstehen."
@@ -249,10 +311,56 @@
    "name": "Kundennutzen",
    "elements": [
     {
+     "type": "multipletext",
+     "name": "question3",
+     "title": "Bitte nenne die wichtigsten Bedürfnisse Deiner Kunden, die durch den Service/das Produkt befriedigt werden sollen.",
+     "description": "Bitte nenne die Bedürfnisse, die Dir spontan einfallen, in absteigender Wichtigkeit",
+     "items": [
+      {
+       "name": "need1",
+       "title": "1."
+      },
+      {
+       "name": "need2",
+       "title": "2."
+      },
+      {
+       "name": "need3",
+       "title": "3."
+      },
+      {
+       "name": "need4",
+       "title": "4."
+      },
+      {
+       "name": "need5",
+       "title": "5."
+      },
+      {
+       "name": "need6",
+       "title": "6."
+      }
+     ]
+    },
+    {
      "type": "rating",
      "name": "nutzen_wie_haeufig",
-     "title": "Wie häufig muss das Bedürfnis befriedigt werden?",
-     "description": "1: Sehr selten | 5: Sehr oft"
+     "title": "Wie häufig muss das wichtigste Bedürfnis befriedigt werden?",
+     "description": "1: Sehr selten | 5: Sehr oft",
+     "enableIf": "{nutzen_checkbox_frequency_unknown} <> ['unknown']"
+    },
+    {
+     "type": "checkbox",
+     "name": "nutzen_checkbox_frequency_unknown",
+     "startWithNewLine": false,
+     "title": "Alternative Antwortmöglichkeit",
+     "hideNumber": true,
+     "choices": [
+      {
+       "value": "unknown",
+       "text": "Das weiß ich nicht"
+      }
+     ]
     },
     {
      "type": "radiogroup",
@@ -268,13 +376,18 @@
        "text": "Dauerhaft"
       },
       {
+       "value": "different",
+       "text": "Wechselhaft"
+      },
+      {
        "value": "Weiß nicht",
        "text": "Weiß nicht"
       }
      ]
     }
    ],
-   "title": "Hier möchten wir den Nutzen des Services für deinen Kunden ermitteln."
+   "title": "Hier möchten wir den Nutzen des Services für deinen Kunden ermitteln.",
+   "description": "Mit dem von Dir geplanten Service oder Produkt soll ein oder mehrere Bedürfnisse Deiner Kunden befriedigt werden. Lass uns ein wenig mehr darüber erfahren:"
   },
   {
    "name": "Markt und Wettbewerb",
@@ -330,7 +443,8 @@
       }
      ],
      "hasOther": true,
-     "otherText": "Sonstiges, und zwar ..."
+     "otherText": "Sonstiges, und zwar ...",
+     "optionsCaption": "Bitte auswählen"
     },
     {
      "type": "radiogroup",
@@ -348,16 +462,40 @@
       {
        "value": "Markt stagniert",
        "text": "Markt stagniert"
+      },
+      {
+       "value": "unknown",
+       "text": "Das ist mir nicht bekannt"
       }
-     ]
+     ],
+     "hasOther": true,
+     "otherText": "Sonstiges, und zwar: "
     },
     {
      "type": "rating",
      "name": "markt_eigenrealisierung",
      "title": "Wie aufwändig ist die Eigenrealisierung durch den Kunden selbst?",
-     "description": "1: Sehr geringer Aufwand | 5: Sehr hoher Aufwand\n"
+     "description": "Wie löst der Kunde bislang sein Problem ohne Deinen Service oder Produkt? Wie aufwändig schätzt Du dies ein, z.B. der manuelle Weg, den er heute geht?\n",
+     "enableIf": "{markt_checkbox_eigenrealisierung_unknown} <> ['unknown']",
+     "minRateDescription": "Geringer Aufwand",
+     "maxRateDescription": "Hoher Aufwand"
+    },
+    {
+     "type": "checkbox",
+     "name": "markt_checkbox_eigenrealisierung_unknown",
+     "startWithNewLine": false,
+     "title": "Alternative Antwortmöglichkeit",
+     "hideNumber": true,
+     "choices": [
+      {
+       "value": "unknown",
+       "text": "Ich kann es nicht einschätzen"
+      }
+     ]
     }
-   ]
+   ],
+   "title": "Sag uns mehr über den Markt und Wettbewerb",
+   "description": "Um ein passendes Preis- und Geschäftsmodell zu finden, ist die Betrachtung des Marktes und der Mitbewerber der Kunden wichtig. "
   },
   {
    "name": "Netzwerk",
@@ -394,9 +532,13 @@
        "value": "In Kooperation mit dem Kunden im Projekt",
        "text": "In Kooperation mit dem Kunden im Projekt"
       }
-     ]
+     ],
+     "hasOther": true,
+     "otherText": "Anders, und zwar:"
     }
-   ]
+   ],
+   "title": "Zusammenarbeit mit den Kunden",
+   "description": "An dieser Stelle möchten wir etwas mehr darüber erfahren, wie Du planst, mit Deinen Kunden zusammenzuarbeiten."
   },
   {
    "name": "Technische Rahmenbedingungen",
@@ -405,12 +547,29 @@
      "type": "rating",
      "name": "technik_hohe_fixkosten",
      "title": "Bringt der Service hohe Fixkosten mit sich?",
-     "description": "1: Sehr niedrige Fixkosten | 5: Sehr hohe Fixkosten"
+     "description": "Darunter sind Kosten gemeint, die zum Aufrechterhalten des Services notwendig sind: z.B. bestimmte Geräte, das Allokieren von Cloud-Ressourcen oder beispielsweise Lizenzkosten",
+     "enableIf": "{technik_checkbox_fixkosten_unknown} <> ['unknown']",
+     "minRateDescription": "Sehr niedrige Fixkosten",
+     "maxRateDescription": "Sehr hohe Fixkosten"
+    },
+    {
+     "type": "checkbox",
+     "name": "technik_checkbox_fixkosten_unknown",
+     "startWithNewLine": false,
+     "title": "Alternative Antwortmöglichkeit",
+     "hideNumber": true,
+     "choices": [
+      {
+       "value": "unknown",
+       "text": "Das kann ich nicht sagen"
+      }
+     ]
     },
     {
      "type": "radiogroup",
      "name": "technik_erfassung_moeglich",
-     "title": "Ist eine Erfassung der Nutzungsdauer, des Volumens oder der Anzahl der Nutzungen technisch mit vertretbarem Aufwand realisierbar? (Personenscharf) ",
+     "title": "Kann die Nutzung des Services getrackt werden?",
+     "description": "Gibt es technisch eine Möglichkeit, mit vertretbarem Auswand z.B. die Dauer der Nutzung des Services, die Häufigkeit der Nutzung oder das Datenvolumen zu tracken? Das ganze personenscharf?",
      "choices": [
       {
        "value": "Ja",
@@ -419,6 +578,10 @@
       {
        "value": "Nein",
        "text": "Nein"
+      },
+      {
+       "value": "unknown",
+       "text": "Ich weiß es nicht"
       }
      ]
     },
@@ -426,15 +589,20 @@
      "type": "checkbox",
      "name": "technik_welche_erfassung",
      "visibleIf": "{technik_erfassung_moeglich} = 'Ja'",
-     "title": "Welche technische Erfassung ist denkbar?",
+     "title": "Welche Erfassung der Nutzung des Services ist technisch realisierbar?",
+     "description": "Bitte mach Dir Gedanken im Vorfeld darüber, wie genau Du die Nutzung des Services tracken könntest. ",
      "choices": [
       {
-       "value": "Pro Klick",
-       "text": "Pro Klick"
+       "value": "Pro Nutzung",
+       "text": "Pro Nutzung"
       },
       {
        "value": "Pro Nutzer",
        "text": "Pro Nutzer"
+      },
+      {
+       "value": "Volumen",
+       "text": "Datenvolumen"
       },
       {
        "value": "Nutzungsdauer",
@@ -444,7 +612,9 @@
      "hasOther": true,
      "otherText": "Sonstige, und zwar..."
     }
-   ]
+   ],
+   "title": "Untersuchung der technischen Rahmenbedingungen",
+   "description": "Hier möchten wir - so weit schon bekannt - einige technische Parameter ermitteln die für die Realisierung des Services oder Produkts vielleicht schon bekannt sind. Diese können maßgeblichen Einfluss auf die Auswahl eines geeigneten Geschäfts- oder Preismodells haben. "
   }
  ]
 }
