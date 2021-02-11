@@ -15,6 +15,7 @@ class FactorObserver implements SplObserver
         "Nutzungserfassung" => ["values" => [], "multiplier" => 1],
         "Modell_am_Markt" => ["values" => [], "multiplier" => 1]
     ];
+    private $excluded  = [];
 
     public function getFactors()
     {
@@ -67,5 +68,10 @@ class FactorObserver implements SplObserver
         }
         $class = new $class();
         $class->calculate($value, $this->factors);
+    }
+
+    public function getExcluded()
+    {
+        return $this->excluded;
     }
 }

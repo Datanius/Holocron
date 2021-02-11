@@ -57,6 +57,6 @@ $Preismodell = new Preismodell();
 
 
 echo json_encode([
-    "preismodell" => $Preismodell->calculate($FactorObserver->getFactors()),
+    "preismodell" => $Preismodell->calculate($FactorObserver->getFactors(),$FactorObserver->getExcluded()),
     "factors" => $FactorObserver->getFactors()
 ]);
