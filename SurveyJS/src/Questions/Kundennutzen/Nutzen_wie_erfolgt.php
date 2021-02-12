@@ -3,7 +3,7 @@
 
 class Nutzen_wie_erfolgt extends Question
 {
-    public function calculate($value, &$factors)
+    public function calculate($value, &$factors, $excluded)
     {
         switch ($value) {
             case "Kurzfristig und temporär":

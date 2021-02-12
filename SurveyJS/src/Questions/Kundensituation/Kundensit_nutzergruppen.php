@@ -3,7 +3,7 @@
 
 class Kundensit_nutzergruppen extends Question
 {
-    public function calculate($value, &$factors)
+    public function calculate($value, &$factors, $excluded)
     {
         switch ($value) {
             case "Eine":
