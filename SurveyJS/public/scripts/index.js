@@ -1,37 +1,33 @@
-function init() {
-  var json = window.questionnaire;
+function surveyData() {
+    return {
+        questionnaire: window.questionnaire,
+        pricingModels: window.pricingModels,
+        preismodell: {},
+        factors: {},
+        tooltips: {},
+        saveAnswers: function (result) {
+            fetch('actions/saveResults.php', {
+                method: 'post',
+                body: JSON.stringify({"results": result.data})
+            }).then(r => r.json())
+                .then(json => {
+                    this.preismodell = json.preismodell;
+                    this.factors = json.factors;
+                })
+        },
+        init: function () {
+            var json = this.questionnaire;
 
-  Survey.StylesManager.applyTheme("default");
+            Survey.StylesManager.applyTheme("default");
 
-  window.survey = new Survey.Model(json);
-  survey.onComplete.add(function(result) {
+            window.survey = new Survey.Model(json);
+            survey.onComplete.add(result => {
+                this.saveAnswers(result);
+            });
 
-    fetch('actions/saveResults.php', {
-      method: 'post',
-      body: JSON.stringify({"results": result.data})
-    }).then(r => r.json())
-        .then(json => {
-          $("#surveyResultElement").append(
-            '<div class="preismodell">Preismodell: '+json.preismodell+'</div>'
-          );
-          for (factor in json.factors) {
-
-            var value = json.factors[factor];
-            value = (value === null) ? "" : value;
-
-            $("#surveyResultElement").append(
-              '<div class="factor"><div class="key">' + factor + ':</div>'
-                + '<div class="value">'+value+'</div></div>'
-            );
-          }
-        })
-  });
-
-  $("#surveyElement").Survey({
-    model: survey
-  });
-}
-
-if (!window["%hammerhead%"]) {
-  init();
+            $("#surveyElement").Survey({
+                model: survey
+            });
+        }
+    }
 }
