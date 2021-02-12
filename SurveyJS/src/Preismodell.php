@@ -10,7 +10,15 @@ class Preismodell
             $summe = 0;
             foreach ($pricingModelFactors as $pricingModelFactor => $factorValue) {
                 $factorInfo = $factors[$pricingModelFactor];
-                $differenz = $factorInfo["multiplier"] * abs($factorInfo["value"] - $factorValue);
+                //     $differenz = $factorInfo["multiplier"] * abs($factorInfo["values"] - $factorValue);
+                if (empty($factorInfo["values"])) {
+                    $value = 0;
+                } else {
+                    $value = array_sum($factorInfo["values"]) / count($factorInfo["values"]);
+                }
+                //    $value = array_sum($factorInfo["values"]) / count($factorInfo["values"]);
+
+                $differenz = $factorInfo["multiplier"] * abs($value - $factorValue);
                 $summe += $differenz;
             }
             $summen[$pricingModel] = $summe;
