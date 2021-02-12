@@ -67,7 +67,7 @@ class FactorObserver implements SplObserver
             return;
         }
         $class = new $class();
-        $class->calculate($value, $this->factors);
+        $class->calculate($value, $this->factors, $this->excluded);
     }
 
     public function getExcluded()
