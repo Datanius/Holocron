@@ -7,13 +7,13 @@ class Kundensit_nutzergruppen extends Question
     {
         switch ($value) {
             case "Eine":
-                $factors["Anzahl Nutzergruppen"] = 2;
+                $factors["Anzahl Nutzergruppen"][] = 2;
                 break;
             case "Zwei":
-                $factors["Anzahl Nutzergruppen"] = 5;
+                $factors["Anzahl Nutzergruppen"][] = 5;
                 break;
             case "Mehrere":
-                $factors["Anzahl Nutzergruppen"] = 8;
+                $factors["Anzahl Nutzergruppen"][] = 8;
                 break;
         }
     }

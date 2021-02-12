@@ -7,13 +7,13 @@ class Markt_entwicklung extends Question
     {
         switch ($value) {
             case "Hohes Wachstum":
-                $factors["Skalierbarkeit"] = 8;
+                $factors["Skalierbarkeit"][] = 8;
                 break;
             case "Mittleres Wachstum":
-                $factors["Skalierbarkeit"] = 5;
+                $factors["Skalierbarkeit"][] = 5;
                 break;
             case "Markt stagniert":
-                $factors["Skalierbarkeit"] = 2;
+                $factors["Skalierbarkeit"][] = 2;
                 break;
         }
     }

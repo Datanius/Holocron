@@ -7,10 +7,10 @@ class Netzwerk_kunden_kooperation extends Question
     {
         switch ($value) {
             case "Eigenständig":
-                $factors["Skalierbarkeit"] = 2;
+                $factors["Skalierbarkeit"][] = 2;
                 break;
             case "In Kooperation mit dem Kunden im Projekt":
-                $factors["Skalierbarkeit"] = 8;
+                $factors["Skalierbarkeit"][] = 8;
                 break;
         }
     }

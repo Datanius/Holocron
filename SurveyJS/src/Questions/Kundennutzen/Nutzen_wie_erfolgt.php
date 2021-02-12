@@ -7,10 +7,10 @@ class Nutzen_wie_erfolgt extends Question
     {
         switch ($value) {
             case "Kurzfristig und temporär":
-                $factors["Bedürfnishäufigkeit"] = 8;
+                $factors["Bedürfnishäufigkeit"][]= 8;
                 break;
             case "Dauerhaft":
-                $factors["Bedürfnishäufigkeit"] = 2;
+                $factors["Bedürfnishäufigkeit"][] = 2;
                 break;
         }
     }
