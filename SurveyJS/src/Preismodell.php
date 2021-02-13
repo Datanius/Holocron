@@ -24,6 +24,10 @@ class Preismodell
             $summen[$pricingModel] = $summe;
         }
         asort($summen);
+
+
+
+
         return $summen;
     }
 }
