@@ -1,620 +1,620 @@
 {
- "pages": [
+ pages: [
   {
-   "name": "Kunden",
-   "elements": [
+   name: "Kunden",
+   elements: [
     {
-     "type": "dropdown",
-     "name": "kunden_wer_ist",
-     "title": "Wer ist der Hauptkunde?",
-     "description": "Bitte gib den wichtigsten Kunden deines Services an. Du bist nicht so sicher, was mit \"Kunde\" gemeint ist? S.o.",
-     "choices": [
+     type: "dropdown",
+     name: "kunden_wer_ist",
+     title: "Wer ist der Hauptkunde?",
+     description: "Bitte gib den wichtigsten Kunden deines Services an. Du bist nicht so sicher, was mit \"Kunde\" gemeint ist? S.o.",
+     choices: [
       {
-       "value": "DB Systel",
-       "text": "DB Systel"
+       value: "DB Systel",
+       text: "DB Systel"
       },
       {
-       "value": "DB Fernverkehr",
-       "text": "DB Fernverkehr"
+       value: "DB Fernverkehr",
+       text: "DB Fernverkehr"
       },
       {
-       "value": "DB Cargo",
-       "text": "DB Cargo"
+       value: "DB Cargo",
+       text: "DB Cargo"
       },
       {
-       "value": "DB Energie",
-       "text": "DB Energie"
+       value: "DB Energie",
+       text: "DB Energie"
       },
       {
-       "value": "DB Connect",
-       "text": "DB Connect"
+       value: "DB Connect",
+       text: "DB Connect"
       },
       {
-       "value": "DB Vertrieb",
-       "text": "DB Vertrieb"
+       value: "DB Vertrieb",
+       text: "DB Vertrieb"
       },
       {
-       "value": "DB Netz",
-       "text": "DB Netz"
+       value: "DB Netz",
+       text: "DB Netz"
       },
       {
-       "value": "DB Regio",
-       "text": "DB Regio"
+       value: "DB Regio",
+       text: "DB Regio"
       }
      ],
-     "hasOther": true,
-     "otherText": "Anderer, und zwar...",
-     "optionsCaption": "Bitte auswählen"
+     hasOther: true,
+     otherText: "Anderer, und zwar...",
+     optionsCaption: "Bitte auswählen"
     },
     {
-     "type": "checkbox",
-     "name": "kunden_welche_art",
-     "title": "Welche Art von Hauptkunde ist das?",
-     "choices": [
+     type: "checkbox",
+     name: "kunden_welche_art",
+     title: "Welche Art von Hauptkunde ist das?",
+     choices: [
       {
-       "value": "Endkunden außerhalb des Konzerns",
-       "text": "Endkunde außerhalb des Konzerns"
+       value: "Endkunden außerhalb des Konzerns",
+       text: "Endkunde außerhalb des Konzerns"
       },
       {
-       "value": "Mitarbeiter der DB Systel",
-       "text": "Mitarbeiter der DB Systel"
+       value: "Mitarbeiter der DB Systel",
+       text: "Mitarbeiter der DB Systel"
       },
       {
-       "value": "Mitarbeiter des Konzerns",
-       "text": "Mitarbeiter der DB Konzernzentrale"
+       value: "Mitarbeiter des Konzerns",
+       text: "Mitarbeiter der DB Konzernzentrale"
       },
       {
-       "value": "Mitarbeiter eines Tochterunternehmens",
-       "text": "Mitarbeiter eines DB-Tochterunternehmens"
+       value: "Mitarbeiter eines Tochterunternehmens",
+       text: "Mitarbeiter eines DB-Tochterunternehmens"
       }
      ]
     },
     {
-     "type": "radiogroup",
-     "name": "kunden_wie_viele",
-     "title": "Wie viele potentielle Kunden gibt es für deinen Service?",
-     "valueName": "unknown",
-     "defaultValue": "other",
-     "choices": [
+     type: "radiogroup",
+     name: "kunden_wie_viele",
+     title: "Wie viele potentielle Kunden gibt es für deinen Service?",
+     valueName: "unknown",
+     defaultValue: "other",
+     choices: [
       {
-       "value": "1",
-       "text": "1"
+       value: "1",
+       text: "1"
       },
       {
-       "value": "2-10",
-       "text": "2-10"
+       value: "2-10",
+       text: "2-10"
       },
       {
-       "value": "10-100",
-       "text": "10-100"
+       value: "10-100",
+       text: "10-100"
       },
       {
-       "value": "Mehr als 100",
-       "text": "Mehr als 100"
+       value: "Mehr als 100",
+       text: "Mehr als 100"
       },
       {
-       "value": "Kann ich nicht sagen",
-       "text": "Kann ich nicht sagen"
+       value: "Kann ich nicht sagen",
+       text: "Kann ich nicht sagen"
       }
      ],
-     "otherText": "Kann ich nicht sagen"
+     otherText: "Kann ich nicht sagen"
     }
    ],
-   "title": "Kunden",
-   "description": "Hier möchten wir ermitteln, wer Deine potentiellen Kunden sind. Kunden im Sinne von Geldgebern, Auftraggebern, denen, die den echten Need haben, den Dein Service befriedigen soll. Wir nehmen hierfür fortan das Synonym \"Kunde\"."
+   title: "Kunden",
+   description: "Hier möchten wir ermitteln, wer Deine potentiellen Kunden sind. Kunden im Sinne von Geldgebern, Auftraggebern, denen, die den echten Need haben, den Dein Service befriedigen soll. Wir nehmen hierfür fortan das Synonym \"Kunde\"."
   },
   {
-   "name": "Kundensituation",
-   "elements": [
+   name: "Kundensituation",
+   elements: [
     {
-     "type": "boolean",
-     "name": "kundensit_risiko_enable",
-     "title": "Kannst Du eine Aussage zum Geschäftsrisiko des Hauptkunden in dem betroffenen Geschäftsfeld machen?",
-     "defaultValue": "yes",
-     "isRequired": true,
-     "labelTrue": "Ja, kann ich",
-     "labelFalse": "Nein, nicht möglich",
-     "valueTrue": "yes",
-     "valueFalse": "no"
+     type: "boolean",
+     name: "kundensit_risiko_enable",
+     title: "Kannst Du eine Aussage zum Geschäftsrisiko des Hauptkunden in dem betroffenen Geschäftsfeld machen?",
+     defaultValue: "yes",
+     isRequired: true,
+     labelTrue: "Ja, kann ich",
+     labelFalse: "Nein, nicht möglich",
+     valueTrue: "yes",
+     valueFalse: "no"
     },
     {
-     "type": "rating",
-     "name": "question1",
-     "visibleIf": "{kundensit_risiko_enable} = 'yes'",
-     "indent": 4,
-     "title": "Wie hoch schätzt Du das Risiko ein, welches der Hauptkunde trägt?",
-     "minRateDescription": "Geringed Risiko",
-     "maxRateDescription": "Sehr hohes Risiko"
+     type: "rating",
+     name: "kundensit_hoehe_risiko",
+     visibleIf: "{kundensit_risiko_enable} = 'yes'",
+     indent: 4,
+     title: "Wie hoch schätzt Du das Risiko ein, welches der Hauptkunde trägt?",
+     minRateDescription: "Geringed Risiko",
+     maxRateDescription: "Sehr hohes Risiko"
     },
     {
-     "type": "radiogroup",
-     "name": "kundensit_tragen_sie_risiko",
-     "visibleIf": "{unknown} <> 1 or {unknown} <> 'Kann ich nicht sagen'",
-     "indent": 4,
-     "title": "Tragen alle Kunden ein hohes Risiko?",
-     "choices": [
+     type: "radiogroup",
+     name: "kundensit_tragen_sie_risiko",
+     visibleIf: "{unknown} <> 1 or {unknown} <> 'Kann ich nicht sagen'",
+     indent: 4,
+     title: "Tragen alle Kunden ein hohes Risiko?",
+     choices: [
       {
-       "value": "Ja, alle",
-       "text": "Ja, alle"
+       value: "Ja, alle",
+       text: "Ja, alle"
       },
       {
-       "value": "Die meisten",
-       "text": "Die meisten"
+       value: "Die meisten",
+       text: "Die meisten"
       },
       {
-       "value": "Die wenigsten",
-       "text": "Die wenigsten"
+       value: "Die wenigsten",
+       text: "Die wenigsten"
       },
       {
-       "value": "Nein, nur einer",
-       "text": "Nein, nur einer"
+       value: "Nein, nur einer",
+       text: "Nein, nur einer"
       },
       {
-       "value": "Nein, keiner",
-       "text": "Nein, keiner"
+       value: "Nein, keiner",
+       text: "Nein, keiner"
       }
      ]
     },
     {
-     "type": "rating",
-     "name": "kundensit_zusammenbrechen_service",
-     "visibleIf": "{kundensit_risiko_enable} = 'yes'",
-     "indent": 4,
-     "title": "Hätte ein Zusammenbrechen des Services einen kritischen Einfluss auf die gesamte Geschäftstätigkeit des Haputkunden?",
-     "description": "0: Geringer kritischer Einfluss; ein Stop des Service wäre nicht gravierend | 5: Hoher kritischer Einfluss; ein Stop des Service hätte verheerende Auswirkungen für den Kunden",
-     "minRateDescription": "gering",
-     "maxRateDescription": "kritisch"
+     type: "rating",
+     name: "kundensit_zusammenbrechen_service",
+     visibleIf: "{kundensit_risiko_enable} = 'yes'",
+     indent: 4,
+     title: "Hätte ein Zusammenbrechen des Services einen kritischen Einfluss auf die gesamte Geschäftstätigkeit des Haputkunden?",
+     description: "0: Geringer kritischer Einfluss; ein Stop des Service wäre nicht gravierend | 5: Hoher kritischer Einfluss; ein Stop des Service hätte verheerende Auswirkungen für den Kunden",
+     minRateDescription: "gering",
+     maxRateDescription: "kritisch"
     },
     {
-     "type": "rating",
-     "name": "kundensit_kerngeschaeft_korreliert",
-     "title": "Wie stark ist der Service mit dem Kerngeschäft des Unternehmens des Hauptkunden korreliert?",
-     "description": "Wir möchten ein Gefühl dafür bekommmen, wie weit der Service für das Kerngeschäft des Kunden etwas gänzlich neues/anderes ist oder wie weit er direkt den Hauptkunden in seinem Kerngeschäft unterstützt. ",
-     "enableIf": "{kundensit_checkbox_correlation_unknown} <> ['unknown']",
-     "isRequired": true,
-     "minRateDescription": "Nicht korreliert",
-     "maxRateDescription": "Stark korrelliert"
+     type: "rating",
+     name: "kundensit_kerngeschaeft_korreliert",
+     title: "Wie stark ist der Service mit dem Kerngeschäft des Unternehmens des Hauptkunden korreliert?",
+     description: "Wir möchten ein Gefühl dafür bekommmen, wie weit der Service für das Kerngeschäft des Kunden etwas gänzlich neues/anderes ist oder wie weit er direkt den Hauptkunden in seinem Kerngeschäft unterstützt. ",
+     enableIf: "{kundensit_kerngeschaeft_korreliert_alt} <> ['unknown']",
+     isRequired: true,
+     minRateDescription: "Nicht korreliert",
+     maxRateDescription: "Stark korrelliert"
     },
     {
-     "type": "checkbox",
-     "name": "kundensit_checkbox_correlation_unknown",
-     "startWithNewLine": false,
-     "title": "Alternative Antwortmöglichkeit:",
-     "hideNumber": true,
-     "choices": [
+     type: "checkbox",
+     name: "kundensit_kerngeschaeft_korreliert_alt",
+     startWithNewLine: false,
+     title: "Alternative Antwortmöglichkeit:",
+     hideNumber: true,
+     choices: [
       {
-       "value": "unknown",
-       "text": "Unbekannt"
+       value: "unknown",
+       text: "Unbekannt"
       }
      ]
     },
     {
-     "type": "radiogroup",
-     "name": "kundensit_bisherige_loesung",
-     "title": "Welche Lösung hat der Kunde bisher eingesetzt?",
-     "choices": [
+     type: "radiogroup",
+     name: "kundensit_bisherige_loesung",
+     title: "Welche Lösung hat der Kunde bisher eingesetzt?",
+     choices: [
       {
-       "value": "Manueller Prozess",
-       "text": "Manueller Prozess"
+       value: "Manueller Prozess",
+       text: "Manueller Prozess"
       },
       {
-       "value": "Andere IT-Lösung",
-       "text": "Andere IT-Lösung"
+       value: "Andere IT-Lösung",
+       text: "Andere IT-Lösung"
       }
      ],
-     "hasOther": true,
-     "otherText": "Sonstige, und zwar ..."
+     hasOther: true,
+     otherText: "Sonstige, und zwar ..."
     },
     {
-     "type": "rating",
-     "name": "kundensit_loesung_aufwaendig",
-     "visibleIf": "{kundensit_bisherige_loesung} = 'Manueller Prozess' or {kundensit_bisherige_loesung} = 'other'",
-     "title": "Wie aufwändig war diese Lösung?",
-     "description": "Bitte schätze den Aufwand für die alternative Lösung ein: Hier fließen Faktoren wie benötigte Zeit, Komplexität und Unsicherheit ein",
-     "rateMin": 2,
-     "minRateDescription": "Sehr niedriger Aufwand",
-     "maxRateDescription": "Sehr hoher Aufwand"
+     type: "rating",
+     name: "kundensit_loesung_aufwaendig",
+     visibleIf: "{kundensit_bisherige_loesung} = 'Manueller Prozess' or {kundensit_bisherige_loesung} = 'other'",
+     title: "Wie aufwändig war diese Lösung?",
+     description: "Bitte schätze den Aufwand für die alternative Lösung ein: Hier fließen Faktoren wie benötigte Zeit, Komplexität und Unsicherheit ein",
+     rateMin: 2,
+     minRateDescription: "Sehr niedriger Aufwand",
+     maxRateDescription: "Sehr hoher Aufwand"
     },
     {
-     "type": "rating",
-     "name": "kundensit_bisherig_geeignet",
-     "visibleIf": "{kundensit_bisherige_loesung} = 'Andere IT-Lösung' or {kundensit_bisherige_loesung} = 'other'",
-     "title": "Wie geeignet war die bisherige Lösung?",
-     "minRateDescription": "Total ungeeignet",
-     "maxRateDescription": "Sehr gut"
+     type: "rating",
+     name: "kundensit_bisherig_geeignet",
+     visibleIf: "{kundensit_bisherige_loesung} = 'Andere IT-Lösung' or {kundensit_bisherige_loesung} = 'other'",
+     title: "Wie geeignet war die bisherige Lösung?",
+     minRateDescription: "Total ungeeignet",
+     maxRateDescription: "Sehr gut"
     },
     {
-     "type": "radiogroup",
-     "name": "kundensit_nutzergruppen",
-     "title": "Gibt es unterschiedliche Nutzergruppen für den Service?",
-     "choices": [
+     type: "radiogroup",
+     name: "kundensit_nutzergruppen",
+     title: "Gibt es unterschiedliche Nutzergruppen für den Service?",
+     choices: [
       {
-       "value": "Eine Nutzergruppe",
-       "text": "Eine Nutzergruppe"
+       value: "Eine Nutzergruppe",
+       text: "Eine Nutzergruppe"
       },
       {
-       "value": "Zwei Nutzergruppen",
-       "text": "Zwei Nutzergruppen"
+       value: "Zwei Nutzergruppen",
+       text: "Zwei Nutzergruppen"
       },
       {
-       "value": "Mehr als zwei Nutzergruppen",
-       "text": "Mehr als zwei Nutzergruppen"
+       value: "Mehr als zwei Nutzergruppen",
+       text: "Mehr als zwei Nutzergruppen"
       }
      ]
     },
     {
-     "type": "radiogroup",
-     "name": "kundensit_zahlungsbereitschaft",
-     "title": "Haben die Kunden unterschiedliche Zahlungsbereitschaften?",
-     "choices": [
+     type: "radiogroup",
+     name: "kundensit_zahlungsbereitschaft",
+     title: "Haben die Kunden unterschiedliche Zahlungsbereitschaften?",
+     choices: [
       {
-       "value": "Ja",
-       "text": "Ja"
+       value: "Ja",
+       text: "Ja"
       },
       {
-       "value": "Nein",
-       "text": "Nein"
+       value: "Nein",
+       text: "Nein"
       },
       {
-       "value": "Weiß nicht",
-       "text": "Weiß nicht"
+       value: "Weiß nicht",
+       text: "Weiß nicht"
       }
      ]
     },
     {
-     "type": "rating",
-     "name": "kundensit_planungssicherheit",
-     "title": "Wie sieht die Planungssicherheit bzw. Preisstabilität für den Kunden über die nächsten Jahre aus?",
-     "enableIf": "{kundensit_checkbox_planungssicherheit_unknown} <> ['unknown']",
-     "minRateDescription": "Keine Planungssicherheit",
-     "maxRateDescription": "Hohe Planungssicherheit"
+     type: "rating",
+     name: "kundensit_planungssicherheit",
+     title: "Wie sieht die Planungssicherheit bzw. Preisstabilität für den Kunden über die nächsten Jahre aus?",
+     enableIf: "{kundensit_planungssicherheit_alt} <> ['unknown']",
+     minRateDescription: "Keine Planungssicherheit",
+     maxRateDescription: "Hohe Planungssicherheit"
     },
     {
-     "type": "checkbox",
-     "name": "kundensit_checkbox_planungssicherheit_unknown",
-     "startWithNewLine": false,
-     "title": "Alternative Antwortmöglichkeit:",
-     "hideNumber": true,
-     "choices": [
+     type: "checkbox",
+     name: "kundensit_planungssicherheit_alt",
+     startWithNewLine: false,
+     title: "Alternative Antwortmöglichkeit:",
+     hideNumber: true,
+     choices: [
       {
-       "value": "unknown",
-       "text": "Unbekannt"
+       value: "unknown",
+       text: "Unbekannt"
       }
      ]
     },
     {
-     "type": "rating",
-     "name": "kundensit_budgetsituation",
-     "title": "Wie sieht die Budgetsituation und der finanzielle Spielraum des Kunden aus?",
-     "description": "Über welche finanziellen Mittel verfügt der Hauptkunde Deiner Einschätzung nach?",
-     "enableIf": "{kundensit_checkbox_budget_unknown} <> ['unknown']",
-     "minRateDescription": "Sehr knappes Budget",
-     "maxRateDescription": "Hohes Budget"
+     type: "rating",
+     name: "kundensit_budgetsituation",
+     title: "Wie sieht die Budgetsituation und der finanzielle Spielraum des Kunden aus?",
+     description: "Über welche finanziellen Mittel verfügt der Hauptkunde Deiner Einschätzung nach?",
+     enableIf: "{kundensit_budgetsituation_alt} <> ['unknown']",
+     minRateDescription: "Sehr knappes Budget",
+     maxRateDescription: "Hohes Budget"
     },
     {
-     "type": "checkbox",
-     "name": "kundensit_checkbox_budget_unknown",
-     "startWithNewLine": false,
-     "title": "Alternative Antwortmöglichkeit:",
-     "hideNumber": true,
-     "choices": [
+     type: "checkbox",
+     name: "kundensit_budgetsituation_alt",
+     startWithNewLine: false,
+     title: "Alternative Antwortmöglichkeit:",
+     hideNumber: true,
+     choices: [
       {
-       "value": "unknown",
-       "text": "Unbekannt"
+       value: "unknown",
+       text: "Unbekannt"
       }
      ]
     }
    ],
-   "title": "Hier möchten wir die Situation deines Kunden verstehen."
+   title: "Hier möchten wir die Situation deines Kunden verstehen."
   },
   {
-   "name": "Kundennutzen",
-   "elements": [
+   name: "Kundennutzen",
+   elements: [
     {
-     "type": "multipletext",
-     "name": "question3",
-     "title": "Bitte nenne die wichtigsten Bedürfnisse Deiner Kunden, die durch den Service/das Produkt befriedigt werden sollen.",
-     "description": "Bitte nenne die Bedürfnisse, die Dir spontan einfallen, in absteigender Wichtigkeit",
-     "items": [
+     type: "multipletext",
+     name: "nutzen_prio_beduerfnisse",
+     title: "Bitte nenne die wichtigsten Bedürfnisse Deiner Kunden, die durch den Service/das Produkt befriedigt werden sollen.",
+     description: "Bitte nenne die Bedürfnisse, die Dir spontan einfallen, in absteigender Wichtigkeit",
+     items: [
       {
-       "name": "need1",
-       "title": "1."
+       name: "need1",
+       title: "1."
       },
       {
-       "name": "need2",
-       "title": "2."
+       name: "need2",
+       title: "2."
       },
       {
-       "name": "need3",
-       "title": "3."
+       name: "need3",
+       title: "3."
       },
       {
-       "name": "need4",
-       "title": "4."
+       name: "need4",
+       title: "4."
       },
       {
-       "name": "need5",
-       "title": "5."
+       name: "need5",
+       title: "5."
       },
       {
-       "name": "need6",
-       "title": "6."
+       name: "need6",
+       title: "6."
       }
      ]
     },
     {
-     "type": "rating",
-     "name": "nutzen_wie_haeufig",
-     "title": "Wie häufig muss das wichtigste Bedürfnis befriedigt werden?",
-     "description": "1: Sehr selten | 5: Sehr oft",
-     "enableIf": "{nutzen_checkbox_frequency_unknown} <> ['unknown']"
+     type: "rating",
+     name: "nutzen_wie_haeufig",
+     title: "Wie häufig muss das wichtigste Bedürfnis befriedigt werden?",
+     description: "1: Sehr selten | 5: Sehr oft",
+     enableIf: "{nutzen_wie_haeufig_alt} <> ['unknown']"
     },
     {
-     "type": "checkbox",
-     "name": "nutzen_checkbox_frequency_unknown",
-     "startWithNewLine": false,
-     "title": "Alternative Antwortmöglichkeit",
-     "hideNumber": true,
-     "choices": [
+     type: "checkbox",
+     name: "nutzen_wie_haeufig_alt",
+     startWithNewLine: false,
+     title: "Alternative Antwortmöglichkeit",
+     hideNumber: true,
+     choices: [
       {
-       "value": "unknown",
-       "text": "Das weiß ich nicht"
+       value: "unknown",
+       text: "Das weiß ich nicht"
       }
      ]
     },
     {
-     "type": "radiogroup",
-     "name": "nutzen_wie_erfolgt",
-     "title": "Wie erfolgt die Bedürfnisbefriedigung",
-     "choices": [
+     type: "radiogroup",
+     name: "nutzen_wie_erfolgt",
+     title: "Wie erfolgt die Bedürfnisbefriedigung",
+     choices: [
       {
-       "value": "Kurzfristig und temporär",
-       "text": "Kurzfristig und temporär"
+       value: "Kurzfristig und temporär",
+       text: "Kurzfristig und temporär"
       },
       {
-       "value": "Dauerhaft",
-       "text": "Dauerhaft"
+       value: "Dauerhaft",
+       text: "Dauerhaft"
       },
       {
-       "value": "different",
-       "text": "Wechselhaft"
+       value: "Wechselhaft",
+       text: "Wechselhaft"
       },
       {
-       "value": "Weiß nicht",
-       "text": "Weiß nicht"
+       value: "Weiß nicht",
+       text: "Weiß nicht"
       }
      ]
     }
    ],
-   "title": "Hier möchten wir den Nutzen des Services für deinen Kunden ermitteln.",
-   "description": "Mit dem von Dir geplanten Service oder Produkt soll ein oder mehrere Bedürfnisse Deiner Kunden befriedigt werden. Lass uns ein wenig mehr darüber erfahren:"
+   title: "Hier möchten wir den Nutzen des Services für deinen Kunden ermitteln.",
+   description: "Mit dem von Dir geplanten Service oder Produkt soll ein oder mehrere Bedürfnisse Deiner Kunden befriedigt werden. Lass uns ein wenig mehr darüber erfahren:"
   },
   {
-   "name": "Markt und Wettbewerb",
-   "elements": [
+   name: "Markt und Wettbewerb",
+   elements: [
     {
-     "type": "radiogroup",
-     "name": "markt_vergleichbare_produkte",
-     "title": "Gibt es vergleichbare Produkte oder alternative Lösungen am Markt?",
-     "choices": [
+     type: "radiogroup",
+     name: "markt_vergleichbare_produkte",
+     title: "Gibt es vergleichbare Produkte oder alternative Lösungen am Markt?",
+     choices: [
       {
-       "value": "Ja",
-       "text": "Ja"
+       value: "Ja",
+       text: "Ja"
       },
       {
-       "value": "Nein",
-       "text": "Nein"
+       value: "Nein",
+       text: "Nein"
       },
       {
-       "value": "Weiß nicht",
-       "text": "Weiß nicht"
+       value: "Weiß nicht",
+       text: "Weiß nicht"
       }
      ]
     },
     {
-     "type": "dropdown",
-     "name": "markt_preismodell_alt",
-     "title": "Welches Preismodell wird für alternative Services verwendet?",
-     "description": "Falls du die Modelle nicht kennst kannst du dich in DB Planet unter Servitization informieren",
-     "choices": [
+     type: "dropdown",
+     name: "markt_preismodell_alt",
+     title: "Welches Preismodell wird für alternative Services verwendet?",
+     description: "Falls du die Modelle nicht kennst kannst du dich in DB Planet unter Servitization informieren",
+     choices: [
       {
-       "value": "Weiß nicht",
-       "text": "Weiß nicht"
+       value: "Weiß nicht",
+       text: "Weiß nicht"
       },
       {
-       "value": "Inhaltsbasiert",
-       "text": "Inhaltsbasiert"
+       value: "Inhaltsbasiert",
+       text: "Inhaltsbasiert"
       },
       {
-       "value": "Pro Asset basiert",
-       "text": "Pro Asset basiert"
+       value: "Pro Asset basiert",
+       text: "Pro Asset basiert"
       },
       {
-       "value": "Time and Material",
-       "text": "Time and Material"
+       value: "Time and Material",
+       text: "Time and Material"
       },
       {
-       "value": "Volumenbasiert",
-       "text": "Volumenbasiert"
+       value: "Volumenbasiert",
+       text: "Volumenbasiert"
       },
       {
-       "value": "Nutzungspauschale",
-       "text": "Nutzungspauschale"
+       value: "Nutzungspauschale",
+       text: "Nutzungspauschale"
       }
      ],
-     "hasOther": true,
-     "otherText": "Sonstiges, und zwar ...",
-     "optionsCaption": "Bitte auswählen"
+     hasOther: true,
+     otherText: "Sonstiges, und zwar ...",
+     optionsCaption: "Bitte auswählen"
     },
     {
-     "type": "radiogroup",
-     "name": "markt_entwicklung",
-     "title": "Wie entwickelt sich der Markt?",
-     "choices": [
+     type: "radiogroup",
+     name: "markt_entwicklung",
+     title: "Wie entwickelt sich der Markt?",
+     choices: [
       {
-       "value": "Hohes Wachstum",
-       "text": "Hohes Wachstum"
+       value: "Hohes Wachstum",
+       text: "Hohes Wachstum"
       },
       {
-       "value": "Mittleres Wachstum",
-       "text": "Mittleres Wachstum"
+       value: "Mittleres Wachstum",
+       text: "Mittleres Wachstum"
       },
       {
-       "value": "Markt stagniert",
-       "text": "Markt stagniert"
+       value: "Markt stagniert",
+       text: "Markt stagniert"
       },
       {
-       "value": "unknown",
-       "text": "Das ist mir nicht bekannt"
+       value: "Das ist mir nicht bekannt",
+       text: "Das ist mir nicht bekannt"
       }
      ],
-     "hasOther": true,
-     "otherText": "Sonstiges, und zwar: "
+     hasOther: true,
+     otherText: "Sonstiges, und zwar: "
     },
     {
-     "type": "rating",
-     "name": "markt_eigenrealisierung",
-     "title": "Wie aufwändig ist die Eigenrealisierung durch den Kunden selbst?",
-     "description": "Wie löst der Kunde bislang sein Problem ohne Deinen Service oder Produkt? Wie aufwändig schätzt Du dies ein, z.B. der manuelle Weg, den er heute geht?\n",
-     "enableIf": "{markt_checkbox_eigenrealisierung_unknown} <> ['unknown']",
-     "minRateDescription": "Geringer Aufwand",
-     "maxRateDescription": "Hoher Aufwand"
+     type: "rating",
+     name: "markt_eigenrealisierung",
+     title: "Wie aufwändig ist die Eigenrealisierung durch den Kunden selbst?",
+     description: "Wie löst der Kunde bislang sein Problem ohne Deinen Service oder Produkt? Wie aufwändig schätzt Du dies ein, z.B. der manuelle Weg, den er heute geht?\n",
+     enableIf: "{markt_eigenrealisierung_alt} <> ['unknown']",
+     minRateDescription: "Geringer Aufwand",
+     maxRateDescription: "Hoher Aufwand"
     },
     {
-     "type": "checkbox",
-     "name": "markt_checkbox_eigenrealisierung_unknown",
-     "startWithNewLine": false,
-     "title": "Alternative Antwortmöglichkeit",
-     "hideNumber": true,
-     "choices": [
+     type: "checkbox",
+     name: "markt_eigenrealisierung_alt",
+     startWithNewLine: false,
+     title: "Alternative Antwortmöglichkeit",
+     hideNumber: true,
+     choices: [
       {
-       "value": "unknown",
-       "text": "Ich kann es nicht einschätzen"
+       value: "unknown",
+       text: "Ich kann es nicht einschätzen"
       }
      ]
     }
    ],
-   "title": "Sag uns mehr über den Markt und Wettbewerb",
-   "description": "Um ein passendes Preis- und Geschäftsmodell zu finden, ist die Betrachtung des Marktes und der Mitbewerber der Kunden wichtig. "
+   title: "Sag uns mehr über den Markt und Wettbewerb",
+   description: "Um ein passendes Preis- und Geschäftsmodell zu finden, ist die Betrachtung des Marktes und der Mitbewerber der Kunden wichtig. "
   },
   {
-   "name": "Netzwerk",
-   "elements": [
+   name: "Netzwerk",
+   elements: [
     {
-     "type": "radiogroup",
-     "name": "netzwerk_gewinnbeteiligung",
-     "title": "Wäre die Mehrzahl deiner Kunden bereit dich am Gewinn mitzubeteiligen?",
-     "choices": [
+     type: "radiogroup",
+     name: "netzwerk_gewinnbeteiligung",
+     title: "Wäre die Mehrzahl deiner Kunden bereit dich am Gewinn mitzubeteiligen?",
+     choices: [
       {
-       "value": "Ja",
-       "text": "Ja"
+       value: "Ja",
+       text: "Ja"
       },
       {
-       "value": "Nein",
-       "text": "Nein"
+       value: "Nein",
+       text: "Nein"
       },
       {
-       "value": "Weiß nicht",
-       "text": "Weiß nicht"
+       value: "Weiß nicht",
+       text: "Weiß nicht"
       }
      ]
     },
     {
-     "type": "radiogroup",
-     "name": "netzwerk_kunden_kooperation",
-     "title": "Arbeiten wir eigenständig oder in Kooperation mit dem Kunden?",
-     "choices": [
+     type: "radiogroup",
+     name: "netzwerk_kunden_kooperation",
+     title: "Arbeiten wir eigenständig oder in Kooperation mit dem Kunden?",
+     choices: [
       {
-       "value": "Eigenständig",
-       "text": "Eigenständig"
+       value: "Eigenständig",
+       text: "Eigenständig"
       },
       {
-       "value": "In Kooperation mit dem Kunden im Projekt",
-       "text": "In Kooperation mit dem Kunden im Projekt"
+       value: "In Kooperation mit dem Kunden im Projekt",
+       text: "In Kooperation mit dem Kunden im Projekt"
       }
      ],
-     "hasOther": true,
-     "otherText": "Anders, und zwar:"
+     hasOther: true,
+     otherText: "Anders, und zwar:"
     }
    ],
-   "title": "Zusammenarbeit mit den Kunden",
-   "description": "An dieser Stelle möchten wir etwas mehr darüber erfahren, wie Du planst, mit Deinen Kunden zusammenzuarbeiten."
+   title: "Zusammenarbeit mit den Kunden",
+   description: "An dieser Stelle möchten wir etwas mehr darüber erfahren, wie Du planst, mit Deinen Kunden zusammenzuarbeiten."
   },
   {
-   "name": "Technische Rahmenbedingungen",
-   "elements": [
+   name: "Technische Rahmenbedingungen",
+   elements: [
     {
-     "type": "rating",
-     "name": "technik_hohe_fixkosten",
-     "title": "Bringt der Service hohe Fixkosten mit sich?",
-     "description": "Darunter sind Kosten gemeint, die zum Aufrechterhalten des Services notwendig sind: z.B. bestimmte Geräte, das Allokieren von Cloud-Ressourcen oder beispielsweise Lizenzkosten",
-     "enableIf": "{technik_checkbox_fixkosten_unknown} <> ['unknown']",
-     "minRateDescription": "Sehr niedrige Fixkosten",
-     "maxRateDescription": "Sehr hohe Fixkosten"
+     type: "rating",
+     name: "technik_hohe_fixkosten",
+     title: "Bringt der Service hohe Fixkosten mit sich?",
+     description: "Darunter sind Kosten gemeint, die zum Aufrechterhalten des Services notwendig sind: z.B. bestimmte Geräte, das Allokieren von Cloud-Ressourcen oder beispielsweise Lizenzkosten",
+     enableIf: "{technik_hohe_fixkosten_alt} <> ['unknown']",
+     minRateDescription: "Sehr niedrige Fixkosten",
+     maxRateDescription: "Sehr hohe Fixkosten"
     },
     {
-     "type": "checkbox",
-     "name": "technik_checkbox_fixkosten_unknown",
-     "startWithNewLine": false,
-     "title": "Alternative Antwortmöglichkeit",
-     "hideNumber": true,
-     "choices": [
+     type: "checkbox",
+     name: "technik_hohe_fixkosten_alt",
+     startWithNewLine: false,
+     title: "Alternative Antwortmöglichkeit",
+     hideNumber: true,
+     choices: [
       {
-       "value": "unknown",
-       "text": "Das kann ich nicht sagen"
+       value: "unknown",
+       text: "Das kann ich nicht sagen"
       }
      ]
     },
     {
-     "type": "radiogroup",
-     "name": "technik_erfassung_moeglich",
-     "title": "Kann die Nutzung des Services getrackt werden?",
-     "description": "Gibt es technisch eine Möglichkeit, mit vertretbarem Auswand z.B. die Dauer der Nutzung des Services, die Häufigkeit der Nutzung oder das Datenvolumen zu tracken? Das ganze personenscharf?",
-     "choices": [
+     type: "radiogroup",
+     name: "technik_erfassung_moeglich",
+     title: "Kann die Nutzung des Services getrackt werden?",
+     description: "Gibt es technisch eine Möglichkeit, mit vertretbarem Auswand z.B. die Dauer der Nutzung des Services, die Häufigkeit der Nutzung oder das Datenvolumen zu tracken? Das ganze personenscharf?",
+     choices: [
       {
-       "value": "Ja",
-       "text": "Ja"
+       value: "Ja",
+       text: "Ja"
       },
       {
-       "value": "Nein",
-       "text": "Nein"
+       value: "Nein",
+       text: "Nein"
       },
       {
-       "value": "unknown",
-       "text": "Ich weiß es nicht"
+       value: "Ich weiß es nicht",
+       text: "Ich weiß es nicht"
       }
      ]
     },
     {
-     "type": "checkbox",
-     "name": "technik_welche_erfassung",
-     "visibleIf": "{technik_erfassung_moeglich} = 'Ja'",
-     "title": "Welche Erfassung der Nutzung des Services ist technisch realisierbar?",
-     "description": "Bitte mach Dir Gedanken im Vorfeld darüber, wie genau Du die Nutzung des Services tracken könntest. ",
-     "choices": [
+     type: "checkbox",
+     name: "technik_welche_erfassung",
+     visibleIf: "{technik_erfassung_moeglich} = 'Ja'",
+     title: "Welche Erfassung der Nutzung des Services ist technisch realisierbar?",
+     description: "Bitte mach Dir Gedanken im Vorfeld darüber, wie genau Du die Nutzung des Services tracken könntest. ",
+     choices: [
       {
-       "value": "Pro Nutzung",
-       "text": "Pro Nutzung"
+       value: "Pro Nutzung",
+       text: "Pro Nutzung"
       },
       {
-       "value": "Pro Nutzer",
-       "text": "Pro Nutzer"
+       value: "Pro Nutzer",
+       text: "Pro Nutzer"
       },
       {
-       "value": "Volumen",
-       "text": "Datenvolumen"
+       value: "Volumen",
+       text: "Datenvolumen"
       },
       {
-       "value": "Nutzungsdauer",
-       "text": "Nutzungsdauer"
+       value: "Nutzungsdauer",
+       text: "Nutzungsdauer"
       }
      ],
-     "hasOther": true,
-     "otherText": "Sonstige, und zwar..."
+     hasOther: true,
+     otherText: "Sonstige, und zwar..."
     }
    ],
-   "title": "Untersuchung der technischen Rahmenbedingungen",
-   "description": "Hier möchten wir - so weit schon bekannt - einige technische Parameter ermitteln die für die Realisierung des Services oder Produkts vielleicht schon bekannt sind. Diese können maßgeblichen Einfluss auf die Auswahl eines geeigneten Geschäfts- oder Preismodells haben. "
+   title: "Untersuchung der technischen Rahmenbedingungen",
+   description: "Hier möchten wir - so weit schon bekannt - einige technische Parameter ermitteln die für die Realisierung des Services oder Produkts vielleicht schon bekannt sind. Diese können maßgeblichen Einfluss auf die Auswahl eines geeigneten Geschäfts- oder Preismodells haben. "
   }
  ]
 }
