@@ -70,10 +70,10 @@
 
                 andere divs wenn nicht model in excluded z.B. in zeile 74
                 -->
-
+<!--
                 <div class="flexbox">
                     Durch Fragen ermittelter Faktor | Preismodelleignung nach Faktor
-                </div>
+                </div> -->
                 
                 <span x-on:click="tooltips[modell] = true" style="position:relative; cursor:pointer;">
                     <svg width="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
