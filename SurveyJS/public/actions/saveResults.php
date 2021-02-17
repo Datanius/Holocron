@@ -29,6 +29,7 @@ require_once __DIR__ . "/../../src/Questions/Kundensituation/Kundensit_traegt_er
 require_once __DIR__ . "/../../src/Questions/Kundensituation/Kundensit_tragen_sie_risiko.php";
 require_once __DIR__ . "/../../src/Questions/Kundensituation/Kundensit_zahlungsbereitschaft.php";
 require_once __DIR__ . "/../../src/Questions/Kundensituation/Kundensit_zusammenbrechen_service.php";
+require_once __DIR__ . "/../../src/Questions/Kundensituation/Kundensit_risiko_enable.php";
 //Markt
 require_once __DIR__ . "/../../src/Questions/Markt/Markt_eigenrealisierung.php";
 require_once __DIR__ . "/../../src/Questions/Markt/Markt_entwicklung.php";
