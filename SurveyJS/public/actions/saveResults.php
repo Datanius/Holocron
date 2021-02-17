@@ -15,10 +15,12 @@ require_once __DIR__ . "/../../src/Questions/Kunden/Kunden_wie_viele.php";
 //Kundennutzen
 require_once __DIR__ . "/../../src/Questions/Kundennutzen/Nutzen_wie_erfolgt.php";
 require_once __DIR__ . "/../../src/Questions/Kundennutzen/Nutzen_wie_haeufig.php";
+require_once __DIR__ . "/../../src/Questions/Kundennutzen/Nutzen_prio_beduerfnisse.php";
 //Kundensituation
 require_once __DIR__ . "/../../src/Questions/Kundensituation/Kundensit_bisherig_geeignet.php";
 require_once __DIR__ . "/../../src/Questions/Kundensituation/Kundensit_bisherige_loesung.php";
 require_once __DIR__ . "/../../src/Questions/Kundensituation/Kundensit_budgetsituation.php";
+require_once __DIR__ . "/../../src/Questions/Kundensituation/Kundensit_hoehe_risiko.php";
 require_once __DIR__ . "/../../src/Questions/Kundensituation/Kundensit_kerngeschaeft_korreliert.php";
 require_once __DIR__ . "/../../src/Questions/Kundensituation/Kundensit_loesung_aufwaendig.php";
 require_once __DIR__ . "/../../src/Questions/Kundensituation/Kundensit_nutzergruppen.php";

@@ -46,6 +46,7 @@ class FactorObserver implements SplObserver
             "kundensit_zahlungsbereitschaft" => Kundensit_zahlungsbereitschaft::class,
             "kundensit_planungssicherheit" => Kundensit_planungssicherheit::class,
             "kundensit_budgetsituation"=>Kundensit_budgetsituation::class,
+            "kundensit_hoehe_risiko"=>Kundensit_hoehe_risiko::class,
             //Kundennutzen
             "nutzen_wie_haeufig" => Nutzen_wie_haeufig::class,
             "nutzen_wie_erfolgt" => Nutzen_wie_erfolgt::class,
