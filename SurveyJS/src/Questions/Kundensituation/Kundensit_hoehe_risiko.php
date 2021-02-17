@@ -1,7 +1,7 @@
 <?php
 
 
-class Kundensit_kerngeschaeft_korreliert extends QuestionWithUnknown
+class Kundensit_hoehe_risiko
 {
 
     public function calculate($value, &$factors, $excluded, $unknownFlag)
