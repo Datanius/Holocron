@@ -49,6 +49,7 @@ class FactorObserver implements SplObserver
             //Kundennutzen
             "nutzen_wie_haeufig" => Nutzen_wie_haeufig::class,
             "nutzen_wie_erfolgt" => Nutzen_wie_erfolgt::class,
+            "nutzen_prio_beduerfnisse" =>Nutzen_prio_beduerfnisse::class,
             //Markt
             "markt_vergleichbare_produkte" => Markt_vergleichbare_produkte::class,
             "markt_preismodell_alt" => Markt_preismodell_alt::class,
