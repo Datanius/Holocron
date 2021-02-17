@@ -1,6 +1,8 @@
 <?php
 
 require_once __DIR__ . "/../../src/Questions/Question.php";
+require_once __DIR__ . "/../../src/Questions/QuestionDocu.php";
+require_once __DIR__ . "/../../src/Questions/QuestionWithUnknown.php";
 require_once __DIR__ . "/../../src/FactorObserver.php";
 require_once __DIR__ . "/../../src/Preismodell.php";
 require_once __DIR__ . "/../../src/Answer.php";
@@ -37,6 +39,7 @@ require_once __DIR__ . "/../../src/Questions/Netzwerk/Netzwerk_kunden_kooperatio
 require_once __DIR__ . "/../../src/Questions/Technik/Technik_erfassung_moeglich.php";
 require_once __DIR__ . "/../../src/Questions/Technik/Technik_hohe_fixkosten.php";
 require_once __DIR__ . "/../../src/Questions/Technik/Technik_welche_erfassung.php";
+
 
 
 $json = json_decode(trim(file_get_contents("php://input")), true);
